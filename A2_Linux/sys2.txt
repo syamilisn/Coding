@@ -1,0 +1,8 @@
+echo "Date: `date +%D`"
+sleep 2 
+echo "List dir: `ls -l`"
+echo "Process: `ps`"
+echo "User login: `whoami`"
+echo "Current dir: `pwd`"
+echo "Date: `date +%D`"
+

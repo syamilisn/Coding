@@ -1,0 +1,11 @@
+Monday 16 January 2023 05:00:20 PM IST
+Monday 16 January 2023 05:02:54 PM IST
+Monday 16 January 2023 05:04:31 PM IST
+
+Command 'datee' not found, did you mean:
+
+  command 'date' from deb coreutils (8.30-3ubuntu2)
+
+Try: apt install <deb name>
+
+Monday 16 January 2023 05:10:38 PM IST

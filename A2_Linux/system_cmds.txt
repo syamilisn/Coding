@@ -1,0 +1,4 @@
+echo "SYSTEM COMMANDS"
+echo "The list of file in current directory:"
+ls
+echo "END OF SYSTEM COMMANDS"

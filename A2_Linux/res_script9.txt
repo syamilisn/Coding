@@ -1,0 +1,5 @@
+Partition /dev/sda1 size is: 150 GB
+Partition /dev/sda2 size is: 250 GB
+---------------------------------------------
+Total disk size is: 400 GB
+---------------------------------------------

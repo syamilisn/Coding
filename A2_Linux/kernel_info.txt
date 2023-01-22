@@ -1,0 +1,1 @@
+Kernel: Linux Linux Version: 5.15.0-52-generic Today: 01/16/23 Login: lpz-ee213031

@@ -1,0 +1,4 @@
+NR $1 $2 $3
+101:userA:bash
+102:userB:ksh
+103:userC:bash

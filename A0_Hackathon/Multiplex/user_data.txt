@@ -1,0 +1,7 @@
+0 shyam shyam@sasken.com 1
+1 mili mili@sasken.com 0
+2 dora dora@sasken.com 0
+3 melo melo@sasken.com 1
+4 manu manu@sasken.com 0
+5 mintu mintu@sasken.com 0
+6 mintu mintu@sasken.com 0

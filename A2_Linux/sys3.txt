@@ -1,0 +1,4 @@
+echo "Kernel Name: `uname -s`, Version: `uname -r`"
+echo "User Name: `whoami`"
+echo "Working Dir: `pwd`"
+echo "Total #o Process: `ps -e| wc -l`"

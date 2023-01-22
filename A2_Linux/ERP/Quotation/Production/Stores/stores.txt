@@ -1,0 +1,4 @@
+prodNo prodName Qty Cost
+1, rinwash, 1, 70
+2, biriyani, 1, 150
+3, bottle, 1, 650
