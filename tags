@@ -1,0 +1,856 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+0	A0_Hackathon/.vscode/tasks.json	/^                "$gcc"$/;"	s	array:tasks.0.problemMatcher
+0	A0_Hackathon/.vscode/tasks.json	/^                "-fdiagnostics-color=always",$/;"	s	array:tasks.0.args
+0	A0_Hackathon/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+0	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "$gcc"$/;"	s	array:tasks.0.problemMatcher
+0	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "-fdiagnostics-color=always",$/;"	s	array:tasks.0.args
+0	A0_Hackathon/Multiplex/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+0	Basics/.vscode/tasks.json	/^                "$gcc"$/;"	s	array:tasks.0.problemMatcher
+0	Basics/.vscode/tasks.json	/^                "-fdiagnostics-color=always",$/;"	s	array:tasks.0.args
+0	Basics/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+0	League/.vscode/tasks.json	/^                "$gcc"$/;"	s	array:tasks.0.problemMatcher
+0	League/.vscode/tasks.json	/^                "-fdiagnostics-color=always",$/;"	s	array:tasks.0.args
+0	League/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+0	Operations/.vscode/tasks.json	/^                "$gcc"$/;"	s	array:tasks.0.problemMatcher
+0	Operations/.vscode/tasks.json	/^                "-fdiagnostics-color=always",$/;"	s	array:tasks.0.args
+0	Operations/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+1	A0_Hackathon/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+1	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+1	Basics/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+1	League/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+1	Operations/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+2	A0_Hackathon/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+2	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+2	Basics/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+2	League/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+2	Operations/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+3	A0_Hackathon/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+3	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+3	Basics/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+3	League/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+3	Operations/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+4	A0_Hackathon/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+4	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+4	Basics/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+4	League/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+4	Operations/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+A	Cpp/Class.cpp	/^		A(int x=0): var(x){};$/;"	f	class:A	file:
+A	Cpp/Class.cpp	/^class A{$/;"	c	file:
+ARRSIZE	DS/p2_sorting.c	/^#define ARRSIZE /;"	d	file:
+AnonymousFunction35536ed50100	A1_Node/mod_http.js	/^	function(req, res){$/;"	f
+AnonymousFunction4aab226d0100	A1_Node/f1.js	/^	function(req, res){$/;"	f
+AnonymousFunctionb51354120100	A1_Node/helloWorld.js	/^	function(req, res){$/;"	f
+AnonymousFunctionb9ba6e240100	A1_Node/myFirst.js	/^	function(req, res){$/;"	f
+AnonymousFunctiond2db862c0100	A1_Node/file_server.js	/^http.createServer(function (req, res){$/;"	f
+AnonymousFunctiond2db862c0200	A1_Node/file_server.js	/^	fs.readFile('index.html', function(err, data){$/;"	f
+AnonymousFunctione7157eae0100	A1_Node/split_querystring.js	/^	function(req, res){$/;"	f
+BOOKED	A0_Hackathon/Multiplex/global.h	/^    CANCELLED, BOOKED   \/\/cancelled-0, booked-1$/;"	e	enum:Booking_status
+Booking	A0_Hackathon/Multiplex/global.h	/^typedef struct Booking{$/;"	s
+Booking_status	A0_Hackathon/Multiplex/global.h	/^typedef enum Booking_status{$/;"	g
+CANCELLED	A0_Hackathon/Multiplex/global.h	/^    CANCELLED, BOOKED   \/\/cancelled-0, booked-1$/;"	e	enum:Booking_status
+COL	Training/p3.1.c	/^#define COL /;"	d	file:
+COLS	Solved/p4.c	/^#define COLS /;"	d	file:
+COLS	Solved/p4_matrix2D.c	/^#define COLS /;"	d	file:
+COLS	Training/matrix/determinant.c	/^#define COLS /;"	d	file:
+COLS	Training/p1_matrix2D.c	/^#define COLS /;"	d	file:
+Calculator	Training/vi/calculator.py	/^class Calculator:$/;"	c
+Calculator	Training/vi/pattern.py	/^class Calculator:$/;"	c
+Coding	README.md	/^# Coding$/;"	c
+DEQUEUE	League/p3_queue.c	/^enum prompt{ STOP, ENQUEUE, DEQUEUE};$/;"	e	enum:prompt	file:
+ENQUEUE	League/p3_queue.c	/^enum prompt{ STOP, ENQUEUE, DEQUEUE};$/;"	e	enum:prompt	file:
+FAILURE	Training/p3.1.c	/^enum Result {SUCCESS, FAILURE};$/;"	e	enum:Result	file:
+First	Java/First.java	/^class First{$/;"	c
+Food	A0_Hackathon/Hotel/main.c	/^typedef struct Food{$/;"	s	file:
+Info	A0_Hackathon/Movie2/declare.h	/^struct Info{$/;"	s
+Info	A0_Hackathon/Movie3/declare.h	/^struct Info{$/;"	s
+Item	A0_Hackathon/Nursery/main.c	/^struct Item{$/;"	s	file:
+Movie	A0_Hackathon/Movie2/declare.h	/^typedef struct Movie{$/;"	s
+Movie	A0_Hackathon/Movie3/declare.h	/^typedef struct Movie{$/;"	s
+Movie	A0_Hackathon/Multiplex/global.h	/^typedef struct Movie{$/;"	s
+My header	A1_Node/index.html	/^	<h1>My header<\/h1>$/;"	h
+N	Basics/p3_datatypes.c	/^#define N /;"	d	file:
+N	League/p2_deadAlive.c	/^#define N /;"	d	file:
+N	Solved/p6.c	/^#define N /;"	d	file:
+Node	DS/linkedList/p1.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p10_switchStart.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p11_switchEnd.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p12_switchMiddle.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p5_insertStart.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p6_insertEnd.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p7_insertMiddle.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p8.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/linkedList/p9.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/p5_linkedList.c	/^struct Node {$/;"	s	file:
+Node	DS/p7_deleteList.c	/^typedef struct Node{$/;"	s	file:
+Node	DS/p8_treeTraversal.c	/^typedef struct Node{$/;"	s	file:
+Node	League/p3_queList9.c	/^typedef struct Node{$/;"	s	file:
+Node	League/p8_stringGame4.c	/^typedef struct Node$/;"	s	file:
+P	League/p5_output2.c	/^    enum game arr[row][col]={R,S,P,R,S,P,R,S,P,R,S,P};$/;"	e	enum:main::arr	file:
+P	League/p5_output2.c	/^enum game { R=1, P, S};$/;"	e	enum:game	file:
+PT	League/p2_deadAlive.c	/^#define PT /;"	d	file:
+Process	A2_Linux/Shell/process.c	/^typedef struct Process{ $/;"	s	file:
+R	League/p5_output2.c	/^    enum game arr[row][col]={R,S,P,R,S,P,R,S,P,R,S,P};$/;"	e	enum:main::arr	file:
+R	League/p5_output2.c	/^enum game { R=1, P, S};$/;"	e	enum:game	file:
+ROW	Training/p3.1.c	/^#define ROW /;"	d	file:
+ROWS	Solved/p4.c	/^#define ROWS /;"	d	file:
+ROWS	Solved/p4_matrix2D.c	/^#define ROWS /;"	d	file:
+ROWS	Training/matrix/determinant.c	/^#define ROWS /;"	d	file:
+ROWS	Training/p1_matrix2D.c	/^#define ROWS /;"	d	file:
+Result	Training/p3.1.c	/^enum Result {SUCCESS, FAILURE};$/;"	g	file:
+S	League/p5_output2.c	/^    enum game arr[row][col]={R,S,P,R,S,P,R,S,P,R,S,P};$/;"	e	enum:main::arr	file:
+S	League/p5_output2.c	/^enum game { R=1, P, S};$/;"	e	enum:game	file:
+SIZE	A0_Hackathon/Nursery/main.c	/^#define SIZE /;"	d	file:
+SIZE	DS/linkedList/p9.c	/^#define SIZE /;"	d	file:
+SIZE	Hrank/p1.c	/^#define SIZE /;"	d	file:
+SIZE	Training/p3_array.c	/^#define SIZE /;"	d	file:
+STOP	League/p3_queue.c	/^enum prompt{ STOP, ENQUEUE, DEQUEUE};$/;"	e	enum:prompt	file:
+SUCCESS	Training/p3.1.c	/^enum Result {SUCCESS, FAILURE};$/;"	e	enum:Result	file:
+Screen	A0_Hackathon/Movie2/declare.h	/^typedef struct Screen{$/;"	s
+Screen	A0_Hackathon/Movie3/declare.h	/^typedef struct Screen{$/;"	s
+Screen	A0_Hackathon/Multiplex/global.h	/^typedef struct Screen{$/;"	s
+Show	A0_Hackathon/Multiplex/global.h	/^typedef struct Show{$/;"	s
+Stats	A0_Hackathon/Movie2/declare.h	/^struct Stats{$/;"	s
+Stats	A0_Hackathon/Movie3/declare.h	/^struct Stats{$/;"	s
+Table	Filehandling/Database/main.c	/^struct Table{$/;"	s	file:
+Transaction	A0_Hackathon/Nursery/main.c	/^typedef struct Transaction{$/;"	s	file:
+User	A0_Hackathon/Multiplex/global.h	/^typedef struct User{$/;"	s
+__anon7cf2bb920108	League/p3_queue3.c	/^typedef struct{$/;"	s	file:
+__anon8e9159da0108	League/p3_que5.c	/^typedef struct{$/;"	s	file:
+__anon8e915e1b0108	League/p3_que6.c	/^typedef struct{$/;"	s	file:
+__anon8e91625c0108	League/p3_que7.c	/^typedef struct{$/;"	s	file:
+__anon8e91669d0108	League/p3_que8.c	/^typedef struct{$/;"	s	file:
+__anonebf332c50108	DS/p6_singlyLink.c	/^typedef struct{$/;"	s	file:
+__anonff0335790108	League/P3_que4.c	/^typedef struct{$/;"	s	file:
+__init__	Training/vi/calculator.py	/^    def __init__(self, a, b):$/;"	m	class:Calculator
+__init__	Training/vi/pattern.py	/^    def __init__(self, a, b):$/;"	m	class:Calculator
+add	A0_Hackathon/Multiplex/global.h	/^mode add = "a+";/;"	v	typeref:typename:mode
+add	Training/vi/calculator.py	/^    def add(self):$/;"	m	class:Calculator
+add	Training/vi/pattern.py	/^    def add(self):$/;"	m	class:Calculator
+add	headers/calculator.h	/^int add(int a, int b){$/;"	f	typeref:typename:int
+addMatrix	Solved/p4.c	/^void addMatrix(int (matrix1)[][COLS], int (matrix2)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+addMatrix	Solved/p4_matrix2D.c	/^void addMatrix(int (matrix1)[][COLS], int (matrix2)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+add_user	A0_Hackathon/Multiplex/main.c	/^void add_user(){$/;"	f	typeref:typename:void
+amount	A0_Hackathon/Nursery/main.c	/^float amount;   \/\/  INITIAL = RS. 100000$/;"	v	typeref:typename:float
+amount	A0_Hackathon/Nursery/temp.c	/^float amount;$/;"	v	typeref:typename:float
+anime	Filehandling/Database/main.c	/^    char anime[100];$/;"	m	struct:Table	typeref:typename:char[100]	file:
+args	A0_Hackathon/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+args	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+args	Basics/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+args	League/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+args	Operations/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+arr	DS/p2_sorting.c	/^int arr[5] = {4,1,2,3,5};$/;"	v	typeref:typename:int[5]
+arr	League/p5_output2.c	/^    enum game arr[row][col]={R,S,P,R,S,P,R,S,P,R,S,P};$/;"	g	function:main	file:
+arr	Solved/p1.2.c	/^} arr[5];$/;"	t	typeref:struct:student[5]	file:
+arr	Solved/p6.c	/^int arr[N] = {1,2,3,4,5,6,7,8,9};$/;"	v	typeref:typename:int[]
+arr	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int[30]
+arr=	A2_Linux/script8.sh	/^arr=()$/;"	f
+available	A0_Hackathon/Multiplex/global.h	/^    int available;  \/\/  seats available for booking$/;"	m	struct:Show	typeref:typename:int
+binary_search	Operations/search.c	/^int binary_search(int n, int *arr, int x){$/;"	f	typeref:typename:int
+book_ticket	A0_Hackathon/Multiplex/main.c	/^void book_ticket(int n){$/;"	f	typeref:typename:void
+booked	A0_Hackathon/Multiplex/global.h	/^    int booked; \/\/  booked seats$/;"	m	struct:Show	typeref:typename:int
+booking	A0_Hackathon/Multiplex/global.h	/^}booking;$/;"	t	typeref:struct:Booking
+bubbleSort	DS/p1_bubbleSort.c	/^int * bubbleSort(int *arr,int n){$/;"	f	typeref:typename:int *
+bubbleSort	DS/p2_sorting.c	/^void bubbleSort(int arr[ARRSIZE]){$/;"	f	typeref:typename:void
+bubbleSort	Training/p5.c	/^void bubbleSort(int *arr,int n){$/;"	f	typeref:typename:void
+bubble_sort	Operations/search.c	/^void bubble_sort(int n, int *arr){$/;"	f	typeref:typename:void
+bubble_sort	Operations/sort.c	/^void bubble_sort(int n, int arr[]){$/;"	f	typeref:typename:void
+buy_item	A0_Hackathon/Nursery/main.c	/^void buy_item(string name_of_item){$/;"	f	typeref:typename:void
+calc_func	A2_Linux/calc.sh	/^function calc_func(){$/;"	f
+calculate_amount	A0_Hackathon/Multiplex/main.c	/^float calculate_amount(float price, ticket booked){$/;"	f	typeref:typename:float
+cat_id	A0_Hackathon/Nursery/main.c	/^    int cat_id;   \/\/  category id$/;"	m	struct:Item	typeref:typename:int	file:
+cat_id	A0_Hackathon/Nursery/main.c	/^    int cat_id;   \/\/  category id$/;"	m	struct:Transaction	typeref:typename:int	file:
+cat_name	A0_Hackathon/Nursery/main.c	/^    string cat_name;    \/\/  category name$/;"	m	struct:Item	typeref:typename:string	file:
+cat_name	A0_Hackathon/Nursery/main.c	/^    string cat_name;    \/\/  category name$/;"	m	struct:Transaction	typeref:typename:string	file:
+category	A0_Hackathon/Hotel/main.c	/^typedef enum category {north = 1, south, chinese } group;$/;"	g	file:
+category_choice	A0_Hackathon/Nursery/main.c	/^int category_choice = 0, subcategory_choice = 0;$/;"	v	typeref:typename:int
+cert	A0_Hackathon/Multiplex/global.h	/^    int cert;$/;"	m	struct:Movie	typeref:typename:int
+ch	League/p8_stringGame4.c	/^{   char ch;$/;"	m	struct:Node	typeref:typename:char	file:
+chinese	A0_Hackathon/Hotel/main.c	/^typedef enum category {north = 1, south, chinese } group;$/;"	e	enum:category	file:
+choice	A0_Hackathon/Nursery/main.c	/^int choice = 0, quantity = 0;$/;"	v	typeref:typename:int
+cofactor	Solved/p5_inverseMatrix.c	/^void cofactor(float num[25][25], float f)$/;"	f	typeref:typename:void
+cofactor	Training/matrix/p3.c	/^void cofactor(int m[][3], int order, int cfm[][3]){$/;"	f	typeref:typename:void
+col	A0_Hackathon/Movie2/declare.h	/^    int col;$/;"	m	struct:Screen	typeref:typename:int
+col	A0_Hackathon/Movie3/declare.h	/^    int col;$/;"	m	struct:Screen	typeref:typename:int
+col	DS/p11_doublePointer.c	/^#define col /;"	d	file:
+col	DS/p12_pass2DfuncMalloc.c	/^#define col /;"	d	file:
+col	DS/p13_pass2DfuncCalloc.c	/^#define col /;"	d	file:
+col	DS/p16_ipAddresses.c	/^#define col /;"	d	file:
+col	League/p5_output2.c	/^#define col /;"	d	file:
+combinations	DS/p15_combinations.c	/^int combinations(int n, int r){$/;"	f	typeref:typename:int
+command	A0_Hackathon/.vscode/tasks.json	/^            "command": "\/usr\/bin\/gcc-9",$/;"	s	object:tasks.0
+command	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "command": "\/usr\/bin\/gcc-9",$/;"	s	object:tasks.0
+command	Basics/.vscode/tasks.json	/^            "command": "\/usr\/bin\/gcc-9",$/;"	s	object:tasks.0
+command	League/.vscode/tasks.json	/^            "command": "\/usr\/bin\/gcc-9",$/;"	s	object:tasks.0
+command	Operations/.vscode/tasks.json	/^            "command": "\/usr\/bin\/gcc-9",$/;"	s	object:tasks.0
+compare	League/p5_rpsGame.c	/^char compare(char a, char b){$/;"	f	typeref:typename:char
+compare	Temp/temp.c	/^char compare(char a, char b){$/;"	f	typeref:typename:char
+cost	A0_Hackathon/Hotel/main.c	/^    float cost;$/;"	m	struct:Food	typeref:typename:float	file:
+count	Basics/p7_strings.c	/^int i, j, count;$/;"	v	typeref:typename:int
+counters	A0_Hackathon/Multiplex/main.c	/^int counters[5] = {0,1,2,3,4};   \/\/m- Number of counters$/;"	v	typeref:typename:int[5]
+create	DS/linkedList/p1.c	/^void create(node *head){$/;"	f	typeref:typename:void
+create_menu	A0_Hackathon/Hotel/main.c	/^void create_menu(){$/;"	f	typeref:typename:void
+create_node	DS/linkedList/p10_switchStart.c	/^node* create_node(node* head){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p11_switchEnd.c	/^node* create_node(node* head){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p12_switchMiddle.c	/^node* create_node(node* head){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p5_insertStart.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p6_insertEnd.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p7_insertMiddle.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p8.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/linkedList/p9.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/p6_singlyLink.c	/^node* create_node(){$/;"	f	typeref:typename:node *
+create_node	DS/p7_deleteList.c	/^node* create_node(int d, char s[5]){$/;"	f	typeref:typename:node *
+create_node	DS/p8_treeTraversal.c	/^node* create_node(int d){$/;"	f	typeref:typename:node *
+create_node	League/p3_queList9.c	/^node* create_node(int member, int grp){$/;"	f	typeref:typename:node *
+create_node	League/p8_stringGame4.c	/^void create_node(node *head, char letter){$/;"	f	typeref:typename:void
+create_transaction	A0_Hackathon/Nursery/main.c	/^void create_transaction(int id, int index, int bill){$/;"	f	typeref:typename:void
+cwd	A0_Hackathon/.vscode/tasks.json	/^                "cwd": "${fileDirname}"$/;"	s	object:tasks.0.options
+cwd	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "cwd": "${fileDirname}"$/;"	s	object:tasks.0.options
+cwd	Basics/.vscode/tasks.json	/^                "cwd": "${fileDirname}"$/;"	s	object:tasks.0.options
+cwd	League/.vscode/tasks.json	/^                "cwd": "${fileDirname}"$/;"	s	object:tasks.0.options
+cwd	Operations/.vscode/tasks.json	/^                "cwd": "${fileDirname}"$/;"	s	object:tasks.0.options
+dailyshows	A0_Hackathon/Multiplex/main.c	/^show dailyshows[1000*5];$/;"	v	typeref:typename:show[]
+data	DS/linkedList/p1.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p10_switchStart.c	/^    int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p11_switchEnd.c	/^    int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p12_switchMiddle.c	/^    int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p5_insertStart.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p6_insertEnd.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p7_insertMiddle.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p8.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/linkedList/p9.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/p5_linkedList.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/p6_singlyLink.c	/^    int data;$/;"	m	struct:__anonebf332c50108	typeref:typename:int	file:
+data	DS/p7_deleteList.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	DS/p8_treeTraversal.c	/^	int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	League/p3_queList9.c	/^    int data;$/;"	m	struct:Node	typeref:typename:int	file:
+data	Python/Crops/main.py	/^data = pd.read_csv('dataset.csv')$/;"	v
+data	Python/Crops/main.py	/^data=le.fit_transform(data)$/;"	v
+data	Python/Crops/predict.py	/^data = pd.read_csv('dataset.csv')$/;"	v
+database	A0_Hackathon/Hotel/main.c	/^FILE *database;$/;"	v	typeref:typename:FILE *
+date	A2_Linux/script25.sh	/^function date(){$/;"	f
+declare.h	A0_Hackathon/.vscode/settings.json	/^        "declare.h": "c"$/;"	s	object:files.associations
+delete	DS/linkedList/p9.c	/^void delete(node* n){$/;"	f	typeref:typename:void
+delete_node	DS/linkedList/p10_switchStart.c	/^node* delete_node(node* head){$/;"	f	typeref:typename:node *
+delete_node	DS/linkedList/p11_switchEnd.c	/^node* delete_node(node* head){$/;"	f	typeref:typename:node *
+delete_node	DS/linkedList/p12_switchMiddle.c	/^node* delete_node(node* head, int key){$/;"	f	typeref:typename:node *
+delete_start	DS/linkedList/p8.c	/^node* delete_start(node* head){$/;"	f	typeref:typename:node *
+detail	A0_Hackathon/.vscode/tasks.json	/^            "detail": "Task generated by Debugger."$/;"	s	object:tasks.0
+detail	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "detail": "Task generated by Debugger."$/;"	s	object:tasks.0
+detail	Basics/.vscode/tasks.json	/^            "detail": "Task generated by Debugger."$/;"	s	object:tasks.0
+detail	League/.vscode/tasks.json	/^            "detail": "Task generated by Debugger."$/;"	s	object:tasks.0
+detail	Operations/.vscode/tasks.json	/^            "detail": "Task generated by Debugger."$/;"	s	object:tasks.0
+determinant	Solved/p5_inverseMatrix.c	/^float determinant(float a[25][25], float k)$/;"	f	typeref:typename:float
+determinant	Training/matrix/determinant.c	/^void determinant(int *arr){$/;"	f	typeref:typename:void
+determinant	Training/matrix/p1_m3Det.c	/^float determinant(int m[][3], int order, int i1, int i2){$/;"	f	typeref:typename:float
+determinant	Training/matrix/p2_m2Det.c	/^float determinant(int m[][2], int order){$/;"	f	typeref:typename:float
+determinant	Training/matrix/p3.c	/^float determinant(int m[][3], int order, int i1, int i2){$/;"	f	typeref:typename:float
+display	Cpp/First.cpp	/^void display(int x=0, string prompt="\\n"){ \/\/Default function parameters$/;"	f	typeref:typename:void
+display	DS/p11_doublePointer.c	/^void display(int **arr){$/;"	f	typeref:typename:void
+display	DS/p12_pass2DfuncMalloc.c	/^void display(int **arr){$/;"	f	typeref:typename:void
+display	DS/p13_pass2DfuncCalloc.c	/^void display(int **arr){$/;"	f	typeref:typename:void
+display	DS/p9_stack.c	/^void display(){$/;"	f	typeref:typename:void
+display	Java/First.java	/^	void display(String prompt){$/;"	m	class:First
+display1D	headers/print.h	/^void display1D(int n, int *arr){$/;"	f	typeref:typename:void
+display_shows	A0_Hackathon/Multiplex/main.c	/^void display_shows(){$/;"	f	typeref:typename:void
+display_users	A0_Hackathon/Multiplex/main.c	/^void display_users(){$/;"	f	typeref:typename:void
+div	Training/vi/calculator.py	/^    def div(self):$/;"	m	class:Calculator
+div	Training/vi/pattern.py	/^    def div(self):$/;"	m	class:Calculator
+divide	headers/calculator.h	/^float divide(int a, int b){$/;"	f	typeref:typename:float
+doesnt_exist	League/p3_que11.c	/^int doesnt_exist(int member, int row, int col, int arr[][col]){$/;"	f	typeref:typename:int
+dt	A1_Node/myFirst.js	/^var dt = require('.\/myFirstModule');$/;"	v
+duration	A0_Hackathon/Multiplex/global.h	/^    int duration;   \/\/  time in minutes$/;"	m	struct:Movie	typeref:typename:int
+dynamic	Cpp/First.cpp	/^int dynamic(){$/;"	f	typeref:typename:int
+dynamic	Java/First.java	/^	int dynamic(){$/;"	m	class:First
+email	A0_Hackathon/Multiplex/global.h	/^    char email[25];$/;"	m	struct:User	typeref:typename:char[25]
+empty	A0_Hackathon/Hotel/main.c	/^static int empty = 1;   \/\/flag to indicate status of menu (whether empty or not)$/;"	v	typeref:typename:int	file:
+f1	A2_Linux/script24.sh	/^function f1(){$/;"	f
+factorial	DS/p15_combinations.c	/^int factorial(int n){$/;"	f	typeref:typename:int
+file	A0_Hackathon/Library/template.c	/^void file(string data, string mode, string operation){$/;"	f	typeref:typename:void
+file	A0_Hackathon/Movie2/main.c	/^void file(string data, string mode, string operation){$/;"	f	typeref:typename:void
+file	A0_Hackathon/Movie3/main.c	/^void file(string data, string mode, string operation){$/;"	f	typeref:typename:void
+file	A0_Hackathon/Nursery/main.c	/^void file(string data, string mode, string operation){$/;"	f	typeref:typename:void
+file	A0_Hackathon/Nursery/temp.c	/^void file(string data, string mode, string operation){$/;"	f	typeref:typename:void
+file_read	A0_Hackathon/Library/template.c	/^void file_read(FILE *fp){$/;"	f	typeref:typename:void
+file_write	A0_Hackathon/Library/template.c	/^void file_write(FILE *fp){$/;"	f	typeref:typename:void
+filename	A0_Hackathon/Multiplex/global.h	/^typedef char filename[20];  \/\/string to store file names$/;"	t	typeref:typename:char[20]
+files.associations	A0_Hackathon/.vscode/settings.json	/^    "files.associations": {$/;"	o
+findGroup	League/P3_que4.c	/^int findGroup(int x, int g, int arr[][1001]){$/;"	f	typeref:typename:int
+findGroup	League/p3_que5.c	/^int findGroup(int x, int g, int arr[][1001]){$/;"	f	typeref:typename:int
+findGroup	League/p3_que6.c	/^int findGroup(int x, int g, int arr[][1001]){$/;"	f	typeref:typename:int
+findGroup	League/p3_que7.c	/^int findGroup(int x, int g, int arr[][1001]){$/;"	f	typeref:typename:int
+findGroup	League/p3_que8.c	/^int findGroup(int x, int g, int arr[][1001]){$/;"	f	typeref:typename:int
+find_group	League/p3_queList9.c	/^int find_group(int *que, int n, int mem, int g){$/;"	f	typeref:typename:int
+flag	A0_Hackathon/Movie2/declare.h	/^    int flag;$/;"	m	struct:Stats	typeref:typename:int
+flag	A0_Hackathon/Movie3/declare.h	/^    int flag;$/;"	m	struct:Stats	typeref:typename:int
+flag	Hrank/p5.c	/^int flag = 0;$/;"	v	typeref:typename:int
+foreach	Java/First.java	/^	void foreach(int n, int arr[]){$/;"	m	class:First
+fs	A1_Node/file_server.js	/^var fs = require('fs');$/;"	v
+func	Training/p7.c	/^void func(int arr[40], int i1, int i2){$/;"	f	typeref:typename:void
+func	Training/p9.c	/^int func(int n){    \/\/davids$/;"	f	typeref:typename:int
+function	Training/p8.c	/^char* function(int n, char str[100]){$/;"	f	typeref:typename:char *
+game	League/p5_ipStats.c	/^void game(int row, int col, char arr[][col]){$/;"	f	typeref:typename:void
+game	League/p5_output2.c	/^enum game { R=1, P, S};$/;"	g	file:
+game	League/p5_rpsGame.c	/^void game(int row, int col, char arr[][col], int n){$/;"	f	typeref:typename:void
+game	League/p8_stringGame.c	/^void game(char *s){$/;"	f	typeref:typename:void
+game	League/p8_stringGame2.c	/^void game(char *s){$/;"	f	typeref:typename:void
+game	League/p8_stringGame3.c	/^void game(char *s){$/;"	f	typeref:typename:void
+game	Temp/temp.c	/^void game(int row, int col, char arr[][col], int n){$/;"	f	typeref:typename:void
+getName	A0_Hackathon/Library/template.c	/^#define getName(/;"	d	file:
+getVar	Cpp/Class.cpp	/^		int getVar(){$/;"	f	class:A	typeref:typename:int	file:
+gross_amount	A0_Hackathon/Multiplex/main.c	/^float gross_amount;$/;"	v	typeref:typename:float
+group	A0_Hackathon/.vscode/tasks.json	/^            "group": {$/;"	o	object:tasks.0
+group	A0_Hackathon/Hotel/main.c	/^    int group;$/;"	m	struct:Food	typeref:typename:int	file:
+group	A0_Hackathon/Hotel/main.c	/^typedef enum category {north = 1, south, chinese } group;$/;"	t	typeref:enum:category	file:
+group	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "group": {$/;"	o	object:tasks.0
+group	Basics/.vscode/tasks.json	/^            "group": {$/;"	o	object:tasks.0
+group	League/.vscode/tasks.json	/^            "group": {$/;"	o	object:tasks.0
+group	League/P3_que4.c	/^    int group;$/;"	m	struct:__anonff0335790108	typeref:typename:int	file:
+group	League/p3_que5.c	/^    int group;$/;"	m	struct:__anon8e9159da0108	typeref:typename:int	file:
+group	League/p3_que6.c	/^    int group;$/;"	m	struct:__anon8e915e1b0108	typeref:typename:int	file:
+group	League/p3_que7.c	/^    int group;$/;"	m	struct:__anon8e91625c0108	typeref:typename:int	file:
+group	League/p3_que8.c	/^    int group;$/;"	m	struct:__anon8e91669d0108	typeref:typename:int	file:
+group	League/p3_queList9.c	/^    int group;$/;"	m	struct:Node	typeref:typename:int	file:
+group	League/p3_queue3.c	/^    int group;$/;"	m	struct:__anon7cf2bb920108	typeref:typename:int	file:
+group	Operations/.vscode/tasks.json	/^            "group": {$/;"	o	object:tasks.0
+height	Solved/p1.2.c	/^	int height;$/;"	m	struct:student	typeref:typename:int	file:
+height	Solved/p1.c	/^	int roll, height;$/;"	m	struct:student	typeref:typename:int	file:
+http	A1_Node/f1.js	/^var http = require('http');$/;"	v
+http	A1_Node/file_server.js	/^var http = require('http');$/;"	v
+http	A1_Node/helloWorld.js	/^var http = require('http');$/;"	v
+http	A1_Node/mod_http.js	/^var http = require('http');$/;"	v
+http	A1_Node/myFirst.js	/^var http = require('http');$/;"	v
+http	A1_Node/split_querystring.js	/^var http = require('http');$/;"	v
+i	Basics/p7_strings.c	/^int i, j, count;$/;"	v	typeref:typename:int
+i	Basics/strings/p1_lineInput.c	/^int i , j;$/;"	v	typeref:typename:int
+i	DS/p1_bubbleSort.c	/^int n, i, j, temp;$/;"	v	typeref:typename:int
+i	DS/p2_sorting.c	/^int n = 5, i, j, temp;$/;"	v	typeref:typename:int
+i	Solved/p6.c	/^int i, j;$/;"	v	typeref:typename:int
+i	Training/matrix/p3.c	/^int i, j;$/;"	v	typeref:typename:int
+i	Training/p1_matrix2D.c	/^int i, j;$/;"	v	typeref:typename:int
+i	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int
+i	Training/p7.c	/^int i, x, y;$/;"	v	typeref:typename:int
+id	A0_Hackathon/Anime/main.c	/^    int id;$/;"	m	struct:student	typeref:typename:int	file:
+id	A0_Hackathon/Hotel/main.c	/^    int id;$/;"	m	struct:Food	typeref:typename:int	file:
+id	A0_Hackathon/Nursery/main.c	/^    int id;$/;"	m	struct:Item	typeref:typename:int	file:
+id	A0_Hackathon/Nursery/main.c	/^    int id;$/;"	m	struct:Transaction	typeref:typename:int	file:
+id	Filehandling/Database/main.c	/^    const unsigned int id;$/;"	m	struct:Table	typeref:typename:const unsigned int	file:
+id_movie	A0_Hackathon/Movie2/declare.h	/^    int id_movie;$/;"	m	struct:Movie	typeref:typename:int
+id_movie	A0_Hackathon/Movie3/declare.h	/^    int id_movie;$/;"	m	struct:Movie	typeref:typename:int
+if_num_exists	Hrank/p7_marks.c	/^int if_num_exists(int n, int *ptr_arr, int num){$/;"	f	typeref:typename:int
+info	A0_Hackathon/Movie2/main.c	/^static struct Info info;$/;"	v	typeref:struct:Info	file:
+info	A0_Hackathon/Movie3/main.c	/^struct Info info;$/;"	v	typeref:struct:Info
+info	A0_Hackathon/Multiplex/global.h	/^}info;$/;"	t	typeref:struct:Screen
+init1D	headers/print.h	/^int* init1D(int n){$/;"	f	typeref:typename:int *
+inputMatrix	Solved/p4.c	/^void inputMatrix(int matrix[][COLS], int rows, int cols)$/;"	f	typeref:typename:void
+inputMatrix	Solved/p4_matrix2D.c	/^void inputMatrix(int matrix[][COLS], int rows, int cols)$/;"	f	typeref:typename:void
+inputMatrix	Training/matrix/determinant.c	/^void inputMatrix(int arr[ROWS][COLS], int order){$/;"	f	typeref:typename:void
+inputMatrix	Training/p1_matrix2D.c	/^void inputMatrix(int matrix[][COLS]){$/;"	f	typeref:typename:void
+insert	DS/linkedList/p9.c	/^node* insert(node* n){$/;"	f	typeref:typename:node *
+insert_end	DS/linkedList/p6_insertEnd.c	/^node* insert_end(node* head){$/;"	f	typeref:typename:node *
+insert_end	DS/linkedList/p8.c	/^node* insert_end(node* head){$/;"	f	typeref:typename:node *
+insert_middle	DS/linkedList/p7_insertMiddle.c	/^node* insert_middle(node* head, node* prev_node){$/;"	f	typeref:typename:node *
+insert_start	DS/linkedList/p5_insertStart.c	/^node* insert_start(node* head){$/;"	f	typeref:typename:node *
+insert_start	DS/linkedList/p7_insertMiddle.c	/^node* insert_start(node* head){$/;"	f	typeref:typename:node *
+insertion_sort	Operations/sort.c	/^void insertion_sort(int n, int arr[]){$/;"	f	typeref:typename:void
+integerMapping	Python/Crops/main.py	/^integerMapping = get_integer_mapping(le)$/;"	v
+invalid_show	A0_Hackathon/Multiplex/main.c	/^int invalid_show(int show_id){$/;"	f	typeref:typename:int
+inventory_count	A0_Hackathon/Nursery/main.c	/^int inventory_count;    \/\/count of items in inventory   INITIAL = 0$/;"	v	typeref:typename:int
+isDefault	A0_Hackathon/.vscode/tasks.json	/^                "isDefault": true$/;"	b	object:tasks.0.group
+isDefault	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "isDefault": true$/;"	b	object:tasks.0.group
+isDefault	Basics/.vscode/tasks.json	/^                "isDefault": true$/;"	b	object:tasks.0.group
+isDefault	League/.vscode/tasks.json	/^                "isDefault": true$/;"	b	object:tasks.0.group
+isDefault	Operations/.vscode/tasks.json	/^                "isDefault": true$/;"	b	object:tasks.0.group
+isVowel	Hrank/p8_vowel.c	/^int isVowel(char c){$/;"	f	typeref:typename:int
+item	A0_Hackathon/Hotel/main.c	/^}item;$/;"	t	typeref:struct:Food	file:
+item	A0_Hackathon/Nursery/main.c	/^}item[SIZE];$/;"	v	typeref:struct:Item[]
+item_id	A0_Hackathon/Nursery/main.c	/^    int item_id;$/;"	m	struct:Transaction	typeref:typename:int	file:
+item_name	A0_Hackathon/Nursery/main.c	/^    string item_name;   \/\/ item name$/;"	m	struct:Item	typeref:typename:string	file:
+item_name	A0_Hackathon/Nursery/main.c	/^    string item_name;   \/\/ item name$/;"	m	struct:Transaction	typeref:typename:string	file:
+j	Basics/p7_strings.c	/^int i, j, count;$/;"	v	typeref:typename:int
+j	Basics/strings/p1_lineInput.c	/^int i , j;$/;"	v	typeref:typename:int
+j	DS/p1_bubbleSort.c	/^int n, i, j, temp;$/;"	v	typeref:typename:int
+j	DS/p2_sorting.c	/^int n = 5, i, j, temp;$/;"	v	typeref:typename:int
+j	Solved/p6.c	/^int i, j;$/;"	v	typeref:typename:int
+j	Training/matrix/p3.c	/^int i, j;$/;"	v	typeref:typename:int
+j	Training/p1_matrix2D.c	/^int i, j;$/;"	v	typeref:typename:int
+j	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int
+kernel	A2_Linux/script25.sh	/^function kernel(){$/;"	f
+kind	A0_Hackathon/.vscode/tasks.json	/^                "kind": "build",$/;"	s	object:tasks.0.group
+kind	A0_Hackathon/Multiplex/.vscode/tasks.json	/^                "kind": "build",$/;"	s	object:tasks.0.group
+kind	Basics/.vscode/tasks.json	/^                "kind": "build",$/;"	s	object:tasks.0.group
+kind	League/.vscode/tasks.json	/^                "kind": "build",$/;"	s	object:tasks.0.group
+kind	Operations/.vscode/tasks.json	/^                "kind": "build",$/;"	s	object:tasks.0.group
+label	A0_Hackathon/.vscode/tasks.json	/^            "label": "C\/C++: gcc-9 build active file",$/;"	s	object:tasks.0
+label	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "label": "C\/C++: gcc-9 build active file",$/;"	s	object:tasks.0
+label	Basics/.vscode/tasks.json	/^            "label": "C\/C++: gcc-9 build active file",$/;"	s	object:tasks.0
+label	League/.vscode/tasks.json	/^            "label": "C\/C++: gcc-9 build active file",$/;"	s	object:tasks.0
+label	Operations/.vscode/tasks.json	/^            "label": "C\/C++: gcc-9 build active file",$/;"	s	object:tasks.0
+lang	A0_Hackathon/Multiplex/global.h	/^    char lang[20];$/;"	m	struct:Movie	typeref:typename:char[20]
+language	A0_Hackathon/Movie2/declare.h	/^    string language;$/;"	m	struct:Movie	typeref:typename:string
+language	A0_Hackathon/Movie3/declare.h	/^    string language;$/;"	m	struct:Movie	typeref:typename:string
+le	Python/Crops/main.py	/^le = preprocessing.LabelEncoder()$/;"	v
+left	DS/p8_treeTraversal.c	/^	struct Node* left;$/;"	m	struct:Node	typeref:struct:Node *	file:
+line	A0_Hackathon/Multiplex/main.c	/^char line[100] = "************************************************************"; \/\/Line = 30 s/;"	v	typeref:typename:char[100]
+linear_search	Operations/search.c	/^int linear_search(int n, int *arr, int x){$/;"	f	typeref:typename:int
+link	DS/linkedList/p1.c	/^	struct Node* link;$/;"	m	struct:Node	typeref:struct:Node *	file:
+list	A0_Hackathon/Anime/main.c	/^}list;$/;"	t	typeref:struct:student	file:
+list	A0_Hackathon/Multiplex/main.c	/^movie list[50];$/;"	v	typeref:typename:movie[50]
+load_data	A0_Hackathon/Movie2/main.c	/^void load_data(){$/;"	f	typeref:typename:void
+load_data	A0_Hackathon/Movie3/main.c	/^void load_data(){$/;"	f	typeref:typename:void
+load_data	A0_Hackathon/Multiplex/main.c	/^void load_data(){$/;"	f	typeref:typename:void
+load_file	A0_Hackathon/Nursery/main.c	/^void load_file(){$/;"	f	typeref:typename:void
+load_file	A0_Hackathon/Nursery/temp.c	/^void load_file(){$/;"	f	typeref:typename:void
+login	A2_Linux/script25.sh	/^function login(){$/;"	f
+m	A0_Hackathon/Movie2/declare.h	/^    int m;$/;"	m	struct:Info	typeref:typename:int
+m	A0_Hackathon/Movie3/declare.h	/^    int m;$/;"	m	struct:Info	typeref:typename:int
+main	A0_Hackathon/Anime/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Hotel/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Library/template.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Movie2/check_empty.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Movie2/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Movie3/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Multiplex/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Nursery/main.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Nursery/temp.c	/^void main(){$/;"	f	typeref:typename:void
+main	A0_Hackathon/Nursery/update_inventory.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/IPC/uname.c	/^int main(){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p1.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/Shell/p10.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/Shell/p11.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/Shell/p2.c	/^int main (){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p3.c	/^int main (){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p4.c	/^int main(){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p5.c	/^int main(){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p6.c	/^int main(){$/;"	f	typeref:typename:int
+main	A2_Linux/Shell/p7.c	/^main(){$/;"	f
+main	A2_Linux/Shell/p8.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/Shell/p9.c	/^void main(){$/;"	f	typeref:typename:void
+main	A2_Linux/Shell/process.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p10_dynamic1D.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p11_stringPointer.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p12_switch.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p14_file.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p1_helloWorld.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p2_expEvaluation.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p3_datatypes.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p4_typeCast.c	/^int main() {$/;"	f	typeref:typename:int
+main	Basics/p5_unformatted.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p6_array.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p7_strings.c	/^void main(){$/;"	f	typeref:typename:void
+main	Basics/p8_stringCount.c	/^void main() {$/;"	f	typeref:typename:void
+main	Basics/strings/p1_lineInput.c	/^void main(){$/;"	f	typeref:typename:void
+main	Cpp/Class.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/First.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/Math.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/String.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/Template.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/Vector.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/hello.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	Cpp/myfirstprog.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	DS/P10_queue.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/P14_dynamicArrayCalloc.c	/^int main() {$/;"	f	typeref:typename:int
+main	DS/linkedList/p1.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p10_switchStart.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p11_switchEnd.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p12_switchMiddle.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p5_insertStart.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p6_insertEnd.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p7_insertMiddle.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p8.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/linkedList/p9.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p11_doublePointer.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p12_pass2DfuncMalloc.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p13_pass2DfuncCalloc.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p15_combinations.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p16_ipAddresses.c	/^int main() {$/;"	f	typeref:typename:int
+main	DS/p1_bubbleSort.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p2_sorting.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p3_inoutOps.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p4_inputString.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p5_linkedList.c	/^int main()$/;"	f	typeref:typename:int
+main	DS/p6_singlyLink.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p7_deleteList.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p8_treeTraversal.c	/^void main(){$/;"	f	typeref:typename:void
+main	DS/p9_stack.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/Database/main.c	/^main(){$/;"	f
+main	Filehandling/dummy/temp.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/p1_file.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/p2.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/p3_calculations.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/p4.c	/^void main(){$/;"	f	typeref:typename:void
+main	Filehandling/temp.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p1.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p2.c	/^int main() {$/;"	f	typeref:typename:int
+main	Hrank/p3.c	/^int main()$/;"	f	typeref:typename:int
+main	Hrank/p5.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p5_chain.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p6.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p6_chain2.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p7_marks.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/p8_vowel.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/scl1_print.c	/^void main(){$/;"	f	typeref:typename:void
+main	Hrank/scl2_deadAlive.c	/^void main(){$/;"	f	typeref:typename:void
+main	Java/First.java	/^	public static void main (String args[]){$/;"	m	class:First
+main	League/P3_que4.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p2_deadAlive.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p2_deadAlive2.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p2_deadAlive3.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_que10.c	/^int main() {$/;"	f	typeref:typename:int
+main	League/p3_que5.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_que6.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_que7.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_que8.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_queList9.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_queue.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_queue2.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_queue3.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p3_unbreakable.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p4_codingWeeks.c	/^int main() {$/;"	f	typeref:typename:int
+main	League/p5_ipStats.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p5_output2.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p5_rpsGame.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p6_xmasBash.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p7_pizzaCraving.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p8_stringGame.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p8_stringGame2.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p8_stringGame3.c	/^void main(){$/;"	f	typeref:typename:void
+main	League/p8_stringGame4.c	/^void main(){$/;"	f	typeref:typename:void
+main	Operations/search.c	/^void main(){$/;"	f	typeref:typename:void
+main	Operations/sort.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p1.2.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p1.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p10_palindrome.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p4.c	/^int main()$/;"	f	typeref:typename:int
+main	Solved/p4_matrix2D.c	/^int main()$/;"	f	typeref:typename:int
+main	Solved/p5_inverseMatrix.c	/^int main()$/;"	f	typeref:typename:int
+main	Solved/p6.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p7_circle.c	/^void main(){$/;"	f	typeref:typename:void
+main	Solved/p8_primeNum.c	/^int main() {$/;"	f	typeref:typename:int
+main	Temp/temp.c	/^void main(){$/;"	f	typeref:typename:void
+main	Temp/temp2.c	/^int main() {$/;"	f	typeref:typename:int
+main	Temp/temp3.c	/^int main() {$/;"	f	typeref:typename:int
+main	Training/matrix/determinant.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/matrix/p1_m3Det.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/matrix/p2_m2Det.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/matrix/p3.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p10_tree_arr.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p1_matrix2D.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p2_pointers2Darr.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p3.1.c	/^int main(){$/;"	f	typeref:typename:int
+main	Training/p3_array.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p4.c	/^ void main(){$/;"	f	typeref:typename:void
+main	Training/p5.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p6.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p7.c	/^void main(){$/;"	f	typeref:typename:void
+main	Training/p8.c	/^int main() {$/;"	f	typeref:typename:int
+main	Training/p9.c	/^int main() {$/;"	f	typeref:typename:int
+matrix	Training/matrix/determinant.c	/^typedef int matrix[ROWS][COLS];$/;"	t	typeref:typename:int[ROWS][COLS]	file:
+matrix	Training/p1_matrix2D.c	/^typedef int matrix[ROWS][COLS];$/;"	t	typeref:typename:int[ROWS][COLS]	file:
+matrixInput	Training/p3.1.c	/^Result matrixInput(int matrix[ROW][COL], int *row, int *col){$/;"	f	typeref:typename:Result
+matrixOutput	Training/p3.1.c	/^void matrixOutput(int matrix[ROW][COL], int *row, int *col){$/;"	f	typeref:typename:void
+max	League/p4_codingWeeks.c	/^int max(int *arr, int n){$/;"	f	typeref:typename:int
+max_marks_func	Hrank/p7_marks.c	/^int max_marks_func(int n, int *ptr_marks){$/;"	f	typeref:typename:int
+maxsize	DS/p9_stack.c	/^int maxsize = 8;$/;"	v	typeref:typename:int
+member	League/P3_que4.c	/^    int member;$/;"	m	struct:__anonff0335790108	typeref:typename:int	file:
+member	League/p3_que5.c	/^    int member;$/;"	m	struct:__anon8e9159da0108	typeref:typename:int	file:
+member	League/p3_que6.c	/^    int member;$/;"	m	struct:__anon8e915e1b0108	typeref:typename:int	file:
+member	League/p3_que7.c	/^    int member;$/;"	m	struct:__anon8e91625c0108	typeref:typename:int	file:
+member	League/p3_que8.c	/^    int member;$/;"	m	struct:__anon8e91669d0108	typeref:typename:int	file:
+member	League/p3_queue3.c	/^    int member;$/;"	m	struct:__anon7cf2bb920108	typeref:typename:int	file:
+menu	A0_Hackathon/Hotel/main.c	/^int menu = 0;   \/\/Number of menu items$/;"	v	typeref:typename:int
+mode	A0_Hackathon/Multiplex/global.h	/^typedef char mode[2];  \/\/mode character$/;"	t	typeref:typename:char[2]
+mov_id	A0_Hackathon/Multiplex/global.h	/^    int mov_id; \/\/  mov-ID (Auto-generated)$/;"	m	struct:Movie	typeref:typename:int
+mov_name	A0_Hackathon/Multiplex/global.h	/^    char *mov_name;  \/\/  movie name (depC->movie index)$/;"	m	struct:Show	typeref:typename:char *
+movie	A0_Hackathon/Movie2/declare.h	/^}movie;/;"	t	typeref:struct:Movie
+movie	A0_Hackathon/Movie3/declare.h	/^}movie;/;"	t	typeref:struct:Movie
+movie	A0_Hackathon/Multiplex/global.h	/^}movie;$/;"	t	typeref:struct:Movie
+movieList	A0_Hackathon/Multiplex/global.h	/^filename  movieList = "movie_list.txt"; $/;"	v	typeref:typename:filename
+movie_count	A0_Hackathon/Multiplex/main.c	/^int movie_count;$/;"	v	typeref:typename:int
+movie_list	A0_Hackathon/Multiplex/main.c	/^void movie_list(){$/;"	f	typeref:typename:void
+mul	Training/vi/calculator.py	/^    def mul(self):$/;"	m	class:Calculator
+mul	Training/vi/pattern.py	/^    def mul(self):$/;"	m	class:Calculator
+mul	headers/calculator.h	/^int mul(int a, int b){$/;"	f	typeref:typename:int
+mulMatrix	Solved/p4.c	/^void mulMatrix(int (matrix1)[][COLS], int (matrix2)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+mulMatrix	Solved/p4_matrix2D.c	/^void mulMatrix(int (matrix1)[][COLS], int (matrix2)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+myDateTime	A1_Node/myFirstModule.js	/^exports.myDateTime = function(){$/;"	f	function:exports
+n	A0_Hackathon/Movie2/declare.h	/^    int n;$/;"	m	struct:Info	typeref:typename:int
+n	A0_Hackathon/Movie3/declare.h	/^    int n;$/;"	m	struct:Info	typeref:typename:int
+n	A0_Hackathon/Multiplex/global.h	/^    int n;  \/\/  screen no.$/;"	m	struct:Screen	typeref:typename:int
+n	DS/p1_bubbleSort.c	/^int n, i, j, temp;$/;"	v	typeref:typename:int
+n	DS/p2_sorting.c	/^int n = 5, i, j, temp;$/;"	v	typeref:typename:int
+n	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int
+name	A0_Hackathon/Anime/main.c	/^    char name[20];$/;"	m	struct:student	typeref:typename:char[20]	file:
+name	A0_Hackathon/Hotel/main.c	/^    string name;$/;"	m	struct:Food	typeref:typename:string	file:
+name	A0_Hackathon/Movie2/declare.h	/^    string name;$/;"	m	struct:Movie	typeref:typename:string
+name	A0_Hackathon/Movie3/declare.h	/^    string name;$/;"	m	struct:Movie	typeref:typename:string
+name	A0_Hackathon/Multiplex/global.h	/^    char name[100];$/;"	m	struct:Movie	typeref:typename:char[100]
+name	A0_Hackathon/Multiplex/global.h	/^    char name[50];$/;"	m	struct:User	typeref:typename:char[50]
+name	Filehandling/Database/main.c	/^    char name[50];$/;"	m	struct:Table	typeref:typename:char[50]	file:
+name	Solved/p1.2.c	/^	char name[30];$/;"	m	struct:student	typeref:typename:char[30]	file:
+name	Solved/p1.c	/^	char name[30];$/;"	m	struct:student	typeref:typename:char[30]	file:
+next	DS/linkedList/p10_switchStart.c	/^    struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p11_switchEnd.c	/^    struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p12_switchMiddle.c	/^    struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p5_insertStart.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p6_insertEnd.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p7_insertMiddle.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p8.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/linkedList/p9.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/p5_linkedList.c	/^	struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	DS/p6_singlyLink.c	/^    struct node* next;$/;"	m	struct:__anonebf332c50108	typeref:struct:node *	file:
+next	League/p3_queList9.c	/^    struct Node* next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+next	League/p8_stringGame4.c	/^    struct Node *next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+node	DS/linkedList/p1.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p10_switchStart.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p11_switchEnd.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p12_switchMiddle.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p5_insertStart.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p6_insertEnd.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p7_insertMiddle.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p8.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/linkedList/p9.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/p6_singlyLink.c	/^}node;$/;"	t	typeref:struct:__anonebf332c50108	file:
+node	DS/p7_deleteList.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	DS/p8_treeTraversal.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	League/p3_queList9.c	/^}node;$/;"	t	typeref:struct:Node	file:
+node	League/p8_stringGame4.c	/^}node;$/;"	t	typeref:struct:Node	file:
+north	A0_Hackathon/Hotel/main.c	/^typedef enum category {north = 1, south, chinese } group;$/;"	e	enum:category	file:
+np	Python/Crops/main.py	/^import numpy as np$/;"	I
+obj	Training/vi/calculator.py	/^obj = Calculator(2, 3)$/;"	v
+obj	Training/vi/pattern.py	/^obj = Calculator(2, 3)$/;"	v
+options	A0_Hackathon/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+options	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+options	Basics/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+options	League/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+options	Operations/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+order	A0_Hackathon/Hotel/main.c	/^item order[100];    \/\/globally declaring order list$/;"	v	typeref:typename:item[100]
+outlets_per_day	League/p7_pizzaCraving.c	/^void outlets_per_day(int n, int *outlet, int q, int *coins){$/;"	f	typeref:typename:void
+pd	Python/Crops/main.py	/^import pandas as pd$/;"	I
+pd	Python/Crops/predict.py	/^import pandas as pd$/;"	I
+pid	A2_Linux/Shell/process.c	/^	int pid; $/;"	m	struct:Process	typeref:typename:int	file:
+pin_test	A2_Linux/script28.sh	/^pin_test(){$/;"	f
+pop	DS/p9_stack.c	/^void pop(){$/;"	f	typeref:typename:void
+ppid	A2_Linux/Shell/process.c	/^	int ppid;$/;"	m	struct:Process	typeref:typename:int	file:
+price	A0_Hackathon/Multiplex/global.h	/^    float price;$/;"	m	struct:Booking	typeref:typename:float
+price	A0_Hackathon/Nursery/main.c	/^    float price;$/;"	m	struct:Item	typeref:typename:float	file:
+price	A0_Hackathon/Nursery/main.c	/^    float price;$/;"	m	struct:Transaction	typeref:typename:float	file:
+print	A2_Linux/Shell/head1.h	/^void print(int n){$/;"	f	typeref:typename:void
+print	League/p2_deadAlive.c	/^void print(int arr[][N]){$/;"	f	typeref:typename:void
+print	League/p2_deadAlive2.c	/^void print(int n1, int n2, int arr[][5], char prompt[30]){$/;"	f	typeref:typename:void
+print	League/p5_ipStats.c	/^void print(int row, int col, char arr[][col]){$/;"	f	typeref:typename:void
+print	League/p5_rpsGame.c	/^void print(int row, int col, char arr[][col]){$/;"	f	typeref:typename:void
+print	Temp/temp.c	/^void print(int row, int col, char arr[][col]){$/;"	f	typeref:typename:void
+print	headers/inout.h	/^void print(char prompt[100], int x){$/;"	f	typeref:typename:void
+print1D	Filehandling/h1_print.h	/^void print1D(int n, int arr[], int reverse){$/;"	f	typeref:typename:void
+printArray	DS/p2_sorting.c	/^void printArray(char prompt[10], int arr[ARRSIZE]){$/;"	f	typeref:typename:void
+printMatrix	Solved/p4.c	/^void printMatrix(int (*matrix)[COLS], int rows, int cols)$/;"	f	typeref:typename:void
+printMatrix	Solved/p4_matrix2D.c	/^void printMatrix(int (*matrix)[COLS], int rows, int cols)$/;"	f	typeref:typename:void
+printMatrix	Training/matrix/determinant.c	/^void printMatrix(matrix m, int n){$/;"	f	typeref:typename:void
+printMatrix	Training/p1_matrix2D.c	/^void printMatrix(int matrix[][COLS]){$/;"	f	typeref:typename:void
+print_arr	Operations/search.c	/^void print_arr(int n, int *arr){$/;"	f	typeref:typename:void
+print_arr	Operations/sort.c	/^void print_arr(int n, int *arr){$/;"	f	typeref:typename:void
+print_balance	A0_Hackathon/Nursery/main.c	/^void print_balance(){$/;"	f	typeref:typename:void
+print_file	Filehandling/Database/main.c	/^print_file(FILE *database){$/;"	f
+print_inorder	DS/p8_treeTraversal.c	/^void print_inorder(node* node){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p10_switchStart.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p11_switchEnd.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p12_switchMiddle.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p5_insertStart.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p6_insertEnd.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p7_insertMiddle.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p8.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	DS/linkedList/p9.c	/^void print_list(node* n){$/;"	f	typeref:typename:void
+print_list	League/p8_stringGame4.c	/^void print_list(node *head){$/;"	f	typeref:typename:void
+print_postorder	DS/p8_treeTraversal.c	/^void print_postorder(node* node){$/;"	f	typeref:typename:void
+print_preorder	DS/p8_treeTraversal.c	/^void print_preorder(node* node){$/;"	f	typeref:typename:void
+print_transactions	A0_Hackathon/Nursery/main.c	/^void print_transactions(){$/;"	f	typeref:typename:void
+printc	headers/inout.h	/^void printc(int x){$/;"	f	typeref:typename:void
+prints	headers/inout.h	/^void prints(char *str){$/;"	f	typeref:typename:void
+problemMatcher	A0_Hackathon/.vscode/tasks.json	/^            "problemMatcher": [$/;"	a	object:tasks.0
+problemMatcher	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "problemMatcher": [$/;"	a	object:tasks.0
+problemMatcher	Basics/.vscode/tasks.json	/^            "problemMatcher": [$/;"	a	object:tasks.0
+problemMatcher	League/.vscode/tasks.json	/^            "problemMatcher": [$/;"	a	object:tasks.0
+problemMatcher	Operations/.vscode/tasks.json	/^            "problemMatcher": [$/;"	a	object:tasks.0
+process	A2_Linux/Shell/process.c	/^}process;$/;"	t	typeref:struct:Process	file:
+process	A2_Linux/script25.sh	/^function process(){$/;"	f
+profit	A0_Hackathon/Nursery/main.c	/^float profit;   \/\/  INITIAL = RS. 0$/;"	v	typeref:typename:float
+profit	A0_Hackathon/Nursery/temp.c	/^float profit;$/;"	v	typeref:typename:float
+prompt	League/p3_queue.c	/^enum prompt{ STOP, ENQUEUE, DEQUEUE};$/;"	g	file:
+prompt0	A0_Hackathon/Nursery/main.c	/^string prompt0 = "0. Save and Exit,\\n1. Update Plants, 2. Update Accessories, 3. Update Fertili/;"	v	typeref:typename:string
+prompt1	A0_Hackathon/Nursery/main.c	/^string prompt1 = "\\n\\t0. Save\\n\\t1. Flowering Plants\\n\\t2. Succulents\\n\\t3. Medicinal Pl/;"	v	typeref:typename:string
+prompt2	A0_Hackathon/Nursery/main.c	/^string prompt2 = "\\n\\t0. Save\\n\\t1. Water Pots\\n\\t2. Plates\\n\\t3. Secateur\\n\\t4. Picka/;"	v	typeref:typename:string
+prompt3	A0_Hackathon/Nursery/main.c	/^string prompt3 = "\\n\\t0. Save\\n\\t1. Potting Mix\\n\\t2. Coco  Peat\\n";$/;"	v	typeref:typename:string
+prompt_cocopeat	A0_Hackathon/Nursery/main.c	/^string prompt_cocopeat = "\\n\\t0. Save\\n\\t1. Small (500 grams)\\n\\t2. Big (1 kilo)\\n";$/;"	v	typeref:typename:string
+prompt_flowering	A0_Hackathon/Nursery/main.c	/^string prompt_flowering = "\\n\\t0. Save\\n\\t1. Jasmine\\n\\t2. Rose\\n\\t3. Chrysanthemum\\n\\/;"	v	typeref:typename:string
+prompt_gloves	A0_Hackathon/Nursery/main.c	/^string prompt_gloves = "\\n\\t0. Save\\n\\t1. Rubber\\n";$/;"	v	typeref:typename:string
+prompt_indoor	A0_Hackathon/Nursery/main.c	/^string prompt_indoor = "\\n\\t0. Save\\n\\t1. Rubber plant\\n\\t2. Spider plant\\n\\t3. Syngoniu/;"	v	typeref:typename:string
+prompt_medicinal	A0_Hackathon/Nursery/main.c	/^string prompt_medicinal = "\\n\\t0. Save\\n\\t1. Tulsi\\n\\t2. Turmeric\\n\\t3. Ginger\\n\\t4. B/;"	v	typeref:typename:string
+prompt_pickaxe	A0_Hackathon/Nursery/main.c	/^string prompt_pickaxe = "\\n\\t0. Save\\n\\t1. Steel\\n";$/;"	v	typeref:typename:string
+prompt_plates	A0_Hackathon/Nursery/main.c	/^string prompt_plates = "\\n\\t0. Save\\n\\t1. Small\\n\\t2. Medium\\n\\t3. Big\\n\\t4. Very big\\/;"	v	typeref:typename:string
+prompt_pots	A0_Hackathon/Nursery/main.c	/^string prompt_pots = "\\n\\t0. Save\\n\\t1. Porcelain\\n\\t2. Terracotta\\n\\t3. Plastic\\n\\t4./;"	v	typeref:typename:string
+prompt_pots_sub	A0_Hackathon/Nursery/main.c	/^string prompt_pots_sub = "\\n\\t0. Save\\n\\t1. Small\\n\\t2. Medium\\n\\t3. Big\\n\\t4. Very bi/;"	v	typeref:typename:string
+prompt_pottmix	A0_Hackathon/Nursery/main.c	/^string prompt_pottmix = "\\n\\t0. Save\\n\\t1. Small (500 grams)\\n\\t2. Big (1 kilo)\\n";$/;"	v	typeref:typename:string
+prompt_secateur	A0_Hackathon/Nursery/main.c	/^string prompt_secateur = "\\n\\t0. Save\\n\\t1. Red\\n\\t2. Blue\\n";$/;"	v	typeref:typename:string
+prompt_shovel	A0_Hackathon/Nursery/main.c	/^string prompt_shovel = "\\n\\t0. Save\\n\\t1. Steel\\n";$/;"	v	typeref:typename:string
+prompt_succulent	A0_Hackathon/Nursery/main.c	/^string prompt_succulent = "\\n\\t0. Save\\n\\t1. Lucky Jade\\n\\t2. Aloe Vera\\n\\t3. Cactus\\n"/;"	v	typeref:typename:string
+push	DS/p9_stack.c	/^void push(int ele){$/;"	f	typeref:typename:void
+qty	A0_Hackathon/Hotel/main.c	/^    int qty;    \/\/food item order counter$/;"	m	struct:Food	typeref:typename:int	file:
+qty	A0_Hackathon/Nursery/main.c	/^    int qty;  \/\/  available quantity$/;"	m	struct:Item	typeref:typename:int	file:
+qty	A0_Hackathon/Nursery/main.c	/^    int qty;  \/\/  available quantity$/;"	m	struct:Transaction	typeref:typename:int	file:
+quantity	A0_Hackathon/Nursery/main.c	/^int choice = 0, quantity = 0;$/;"	v	typeref:typename:int
+queue	League/P3_que4.c	/^}queue;$/;"	t	typeref:struct:__anonff0335790108	file:
+queue	League/p3_que5.c	/^}queue;$/;"	t	typeref:struct:__anon8e9159da0108	file:
+queue	League/p3_que6.c	/^}queue;$/;"	t	typeref:struct:__anon8e915e1b0108	file:
+queue	League/p3_que7.c	/^}queue;$/;"	t	typeref:struct:__anon8e91625c0108	file:
+queue	League/p3_que8.c	/^}queue;$/;"	t	typeref:struct:__anon8e91669d0108	file:
+queue	League/p3_queue3.c	/^}queue;$/;"	t	typeref:struct:__anon7cf2bb920108	file:
+read	A0_Hackathon/Multiplex/global.h	/^mode read = "r+";$/;"	v	typeref:typename:mode
+read_file	Basics/p14_file.c	/^void read_file(){$/;"	f	typeref:typename:void
+readline	Hrank/p3.c	/^char* readline() {$/;"	f	typeref:typename:char *
+recur_binary_search	Operations/search.c	/^int recur_binary_search(int *arr, int x, int low, int high){$/;"	f	typeref:typename:int
+recur_func	Solved/p7_circle.c	/^int* recur_func(int *res, int n, int k, int i){ \/\/i:index$/;"	f	typeref:typename:int *
+right	DS/p8_treeTraversal.c	/^	struct Node* right;$/;"	m	struct:Node	typeref:struct:Node *	file:
+roll	Solved/p1.2.c	/^	int roll;$/;"	m	struct:student	typeref:typename:int	file:
+roll	Solved/p1.c	/^	int roll, height;$/;"	m	struct:student	typeref:typename:int	file:
+row	A0_Hackathon/Movie2/declare.h	/^    int row;$/;"	m	struct:Screen	typeref:typename:int
+row	A0_Hackathon/Movie3/declare.h	/^    int row;$/;"	m	struct:Screen	typeref:typename:int
+row	DS/p11_doublePointer.c	/^#define row /;"	d	file:
+row	DS/p12_pass2DfuncMalloc.c	/^#define row /;"	d	file:
+row	DS/p13_pass2DfuncCalloc.c	/^#define row /;"	d	file:
+row	DS/p16_ipAddresses.c	/^#define row /;"	d	file:
+row	League/p5_output2.c	/^#define row /;"	d	file:
+save_data	A0_Hackathon/Movie2/main.c	/^void save_data(){$/;"	f	typeref:typename:void
+save_data	A0_Hackathon/Movie3/main.c	/^void save_data(){$/;"	f	typeref:typename:void
+save_data	A0_Hackathon/Multiplex/main.c	/^void save_data(){$/;"	f	typeref:typename:void
+save_file	A0_Hackathon/Nursery/main.c	/^void save_file(){$/;"	f	typeref:typename:void
+save_file	A0_Hackathon/Nursery/temp.c	/^void save_file(){$/;"	f	typeref:typename:void
+scan	headers/inout.h	/^int scan(char variable){$/;"	f	typeref:typename:int
+scan_file	Filehandling/Database/main.c	/^scan_file(FILE *database, struct Table tuple){$/;"	f
+scanc	headers/inout.h	/^char scanc(int x){$/;"	f	typeref:typename:char
+scans	headers/inout.h	/^char* scans(char *str){$/;"	f	typeref:typename:char *
+scr_no	A0_Hackathon/Multiplex/global.h	/^    int scr_no;  \/\/ show is airing on which screen (depC->screen number)$/;"	m	struct:Show	typeref:typename:int
+screen	A0_Hackathon/Movie2/declare.h	/^}screen;$/;"	t	typeref:struct:Screen
+screen	A0_Hackathon/Movie3/declare.h	/^}screen;$/;"	t	typeref:struct:Screen
+screen	A0_Hackathon/Multiplex/main.c	/^info screen;$/;"	v	typeref:typename:info
+screenInfo	A0_Hackathon/Multiplex/global.h	/^filename  screenInfo = "screen_info.txt";$/;"	v	typeref:typename:filename
+screen_info	A0_Hackathon/Multiplex/main.c	/^void screen_info(){$/;"	f	typeref:typename:void
+search_movie	A0_Hackathon/Multiplex/main.c	/^char* search_movie(int index){$/;"	f	typeref:typename:char *
+selection_sort	Operations/search.c	/^void selection_sort(){$/;"	f	typeref:typename:void
+selection_sort	Operations/sort.c	/^void selection_sort(int n, int arr[]){$/;"	f	typeref:typename:void
+sell_item	A0_Hackathon/Nursery/main.c	/^void sell_item(string name_of_item, string categ){$/;"	f	typeref:typename:void
+setVar	Cpp/Class.cpp	/^		void setVar(int s){$/;"	f	class:A	typeref:typename:void	file:
+shift	Hrank/p5.c	/^void shift(int *ptr_arr, int m, int n, int size){$/;"	f	typeref:typename:void
+shift	Hrank/p5_chain.c	/^void shift(int *ptr_arr, int m, int n, int size){$/;"	f	typeref:typename:void
+shift	Hrank/p6.c	/^void shift(int *ptr_arr, int m, int n, int size){$/;"	f	typeref:typename:void
+shift	Hrank/p6_chain2.c	/^void shift(int *ptr_arr, int m, int n, int size){$/;"	f	typeref:typename:void
+shift	League/p3_unbreakable.c	/^void shift(int ptr_arr[], int m, int n, int size){$/;"	f	typeref:typename:void
+show	A0_Hackathon/Multiplex/global.h	/^}show;$/;"	t	typeref:struct:Show
+showList	A0_Hackathon/Multiplex/global.h	/^filename showList = "show_list.txt";$/;"	v	typeref:typename:filename
+show_id	A0_Hackathon/Multiplex/global.h	/^    int show_id;    $/;"	m	struct:Booking	typeref:typename:int
+show_id	A0_Hackathon/Multiplex/global.h	/^    int show_id; \/\/  show-ID (Auto-generated) (auto-incrementing counter) PRIMKEY$/;"	m	struct:Show	typeref:typename:int
+solved	League/p6_xmasBash.c	/^int solved(int n, int k){$/;"	f	typeref:typename:int
+sort	League/p3_que5.c	/^void sort(queue *que, int n){ \/\/n is value of rear$/;"	f	typeref:typename:void
+sort	League/p3_que6.c	/^void sort(queue *que, int n){ \/\/n is value of rear$/;"	f	typeref:typename:void
+sort	League/p3_que7.c	/^void sort(queue *que, int n){ \/\/n is value of rear$/;"	f	typeref:typename:void
+sort	League/p3_que8.c	/^void sort(queue *que, int n){ \/\/n is value of rear$/;"	f	typeref:typename:void
+sort_string	Hrank/p8_vowel.c	/^void sort_string(char *ptr_str, int n){$/;"	f	typeref:typename:void
+south	A0_Hackathon/Hotel/main.c	/^typedef enum category {north = 1, south, chinese } group;$/;"	e	enum:category	file:
+stack	DS/p9_stack.c	/^int stack[8];$/;"	v	typeref:typename:int[8]
+staff	A0_Hackathon/Multiplex/global.h	/^    int staff;  \/\/0 - customer, 1 - staff (then, name and email is dummy value\/ theatre name)$/;"	m	struct:User	typeref:typename:int
+stats	A0_Hackathon/Movie2/main.c	/^static struct Stats stats;$/;"	v	typeref:struct:Stats	file:
+stats	A0_Hackathon/Multiplex/global.h	/^filename stats = "stats.txt";$/;"	v	typeref:typename:filename
+status	A0_Hackathon/Multiplex/global.h	/^    int status; \/\/ 1-upcoming, 2-now_showing, 3-ended, 4-cancelled$/;"	m	struct:Show	typeref:typename:int
+status	A0_Hackathon/Multiplex/global.h	/^    ticket status;  \/\/ whether booked or cancelled $/;"	m	struct:Booking	typeref:typename:ticket
+string	A0_Hackathon/Hotel/main.c	/^typedef char string[100];$/;"	t	typeref:typename:char[100]	file:
+string	A0_Hackathon/Library/template.c	/^typedef char string[100];$/;"	t	typeref:typename:char[100]	file:
+string	A0_Hackathon/Movie2/declare.h	/^typedef char string[100];$/;"	t	typeref:typename:char[100]
+string	A0_Hackathon/Movie3/declare.h	/^typedef char string[100];$/;"	t	typeref:typename:char[100]
+string	A0_Hackathon/Nursery/main.c	/^typedef char string[200];$/;"	t	typeref:typename:char[200]	file:
+string	A0_Hackathon/Nursery/temp.c	/^typedef char string[150];$/;"	t	typeref:typename:char[150]	file:
+string	A0_Hackathon/Nursery/update_inventory.c	/^typedef char string[150];$/;"	t	typeref:typename:char[150]	file:
+string	Basics/p11_stringPointer.c	/^typedef char string[100];$/;"	t	typeref:typename:char[100]	file:
+string	Basics/p7_strings.c	/^typedef char string[20];$/;"	t	typeref:typename:char[20]	file:
+string	Basics/strings/p1_lineInput.c	/^typedef char string[50];$/;"	t	typeref:typename:char[50]	file:
+string	DS/linkedList/p5_insertStart.c	/^	char string[50];$/;"	m	struct:Node	typeref:typename:char[50]	file:
+string	DS/linkedList/p6_insertEnd.c	/^	char string[50];$/;"	m	struct:Node	typeref:typename:char[50]	file:
+string	DS/linkedList/p7_insertMiddle.c	/^	char string[50];$/;"	m	struct:Node	typeref:typename:char[50]	file:
+string	DS/linkedList/p8.c	/^	char string[50];$/;"	m	struct:Node	typeref:typename:char[50]	file:
+string	DS/linkedList/p9.c	/^	char string[SIZE];$/;"	m	struct:Node	typeref:typename:char[]	file:
+string	DS/p7_deleteList.c	/^	char string[50];$/;"	m	struct:Node	typeref:typename:char[50]	file:
+stringCount	Basics/p7_strings.c	/^int stringCount(string s){$/;"	f	typeref:typename:int
+stringReverse	Basics/p7_strings.c	/^void stringReverse(string s, int n){$/;"	f	typeref:typename:void
+stud	Solved/p1.c	/^} stud;$/;"	t	typeref:struct:student	file:
+student	A0_Hackathon/Anime/main.c	/^typedef struct student{$/;"	s	file:
+student	Solved/p1.2.c	/^typedef struct student{$/;"	s	file:
+student	Solved/p1.c	/^typedef struct student{$/;"	s	file:
+sub	Training/vi/calculator.py	/^    def sub(self):$/;"	m	class:Calculator
+sub	Training/vi/pattern.py	/^    def sub(self):$/;"	m	class:Calculator
+sub	headers/calculator.h	/^int sub(int a, int b){$/;"	f	typeref:typename:int
+subcat_id	A0_Hackathon/Nursery/main.c	/^    int subcat_id;  \/\/  sub-category id$/;"	m	struct:Item	typeref:typename:int	file:
+subcat_id	A0_Hackathon/Nursery/main.c	/^    int subcat_id;  \/\/  sub-category id$/;"	m	struct:Transaction	typeref:typename:int	file:
+subcat_name	A0_Hackathon/Nursery/main.c	/^    string subcat_name;$/;"	m	struct:Item	typeref:typename:string	file:
+subcat_name	A0_Hackathon/Nursery/main.c	/^    string subcat_name;$/;"	m	struct:Transaction	typeref:typename:string	file:
+subcategory_choice	A0_Hackathon/Nursery/main.c	/^int category_choice = 0, subcategory_choice = 0;$/;"	v	typeref:typename:int
+sum	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int
+tasks	A0_Hackathon/.vscode/tasks.json	/^    "tasks": [$/;"	a
+tasks	A0_Hackathon/Multiplex/.vscode/tasks.json	/^    "tasks": [$/;"	a
+tasks	Basics/.vscode/tasks.json	/^    "tasks": [$/;"	a
+tasks	League/.vscode/tasks.json	/^    "tasks": [$/;"	a
+tasks	Operations/.vscode/tasks.json	/^    "tasks": [$/;"	a
+temp	DS/p1_bubbleSort.c	/^int n, i, j, temp;$/;"	v	typeref:typename:int
+temp	DS/p2_sorting.c	/^int n = 5, i, j, temp;$/;"	v	typeref:typename:int
+temp	Training/p5.c	/^int n, i, j, temp, sum=0, arr[30];$/;"	v	typeref:typename:int
+test	A2_Linux/script26.sh	/^test(){$/;"	f
+ticket	A0_Hackathon/Multiplex/global.h	/^}ticket;$/;"	t	typeref:enum:Booking_status
+tickets	A0_Hackathon/Multiplex/global.h	/^    int tickets;    \/\/  #oTickets$/;"	m	struct:Booking	typeref:typename:int
+top	DS/p9_stack.c	/^int top = -1;$/;"	v	typeref:typename:int
+total_price	A0_Hackathon/Nursery/main.c	/^    float total_price;$/;"	m	struct:Transaction	typeref:typename:float	file:
+total_seats	A0_Hackathon/Multiplex/main.c	/^int total_seats;$/;"	v	typeref:typename:int
+total_shows	A0_Hackathon/Multiplex/main.c	/^int total_shows;$/;"	v	typeref:typename:int
+trans_count	A0_Hackathon/Multiplex/main.c	/^int trans_count;$/;"	v	typeref:typename:int
+trans_id	A0_Hackathon/Multiplex/global.h	/^    int trans_id;   \/\/    auto-generated  PRIMKEY$/;"	m	struct:Booking	typeref:typename:int
+trans_id	A0_Hackathon/Nursery/main.c	/^int trans_id;   \/\/transaction id$/;"	v	typeref:typename:int
+transaction	A0_Hackathon/Nursery/main.c	/^}transaction;$/;"	t	typeref:struct:Transaction	file:
+transaction_count	A0_Hackathon/Nursery/main.c	/^int transaction_count;  \/\/count of transactions    INITIAL = 0$/;"	v	typeref:typename:int
+transactions	A0_Hackathon/Multiplex/global.h	/^filename transactions = "transactions.txt";$/;"	v	typeref:typename:filename
+transpose	Solved/p5_inverseMatrix.c	/^void transpose(float num[25][25], float fac[25][25], float r)$/;"	f	typeref:typename:void
+transposeMatrix	Solved/p4.c	/^void transposeMatrix(int (matrix1)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+transposeMatrix	Solved/p4_matrix2D.c	/^void transposeMatrix(int (matrix1)[][COLS] , int rows, int cols){$/;"	f	typeref:typename:void
+type	A0_Hackathon/.vscode/tasks.json	/^            "type": "cppbuild",$/;"	s	object:tasks.0
+type	A0_Hackathon/Multiplex/.vscode/tasks.json	/^            "type": "cppbuild",$/;"	s	object:tasks.0
+type	Basics/.vscode/tasks.json	/^            "type": "cppbuild",$/;"	s	object:tasks.0
+type	League/.vscode/tasks.json	/^            "type": "cppbuild",$/;"	s	object:tasks.0
+type	Operations/.vscode/tasks.json	/^            "type": "cppbuild",$/;"	s	object:tasks.0
+update	Hrank/p2.c	/^void update(int *a,int *b) {$/;"	f	typeref:typename:void
+update_shows	A0_Hackathon/Multiplex/main.c	/^void update_shows(int show_id, int booked, int available){$/;"	f	typeref:typename:void
+update_stats	A0_Hackathon/Multiplex/main.c	/^void update_stats(int m_count, int u_count){$/;"	f	typeref:typename:void
+update_transactions	A0_Hackathon/Multiplex/main.c	/^void update_transactions(booking slot){$/;"	f	typeref:typename:void
+url	A1_Node/f1.js	/^var url = require('url');$/;"	v
+url	A1_Node/split_querystring.js	/^var url = require('url');$/;"	v
+user	A0_Hackathon/Multiplex/global.h	/^}user;$/;"	t	typeref:struct:User
+userData	A0_Hackathon/Multiplex/global.h	/^filename userData = "user_data.txt";$/;"	v	typeref:typename:filename
+user_count	A0_Hackathon/Multiplex/main.c	/^int user_count;$/;"	v	typeref:typename:int
+user_id	A0_Hackathon/Multiplex/global.h	/^    int user_id;    \/\/  auto-generated  PRIMKEY (whether user is CUSTOMER\/ COUNTER_STAFF)$/;"	m	struct:User	typeref:typename:int
+user_id	A0_Hackathon/Multiplex/global.h	/^    int user_id; \/\/  maps to "user.user_id" or "counter_id" (index) $/;"	m	struct:Booking	typeref:typename:int
+var	Cpp/Class.cpp	/^		int var=0;$/;"	m	class:A	typeref:typename:int	file:
+version	A0_Hackathon/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+version	A0_Hackathon/Multiplex/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+version	Basics/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+version	League/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+version	Operations/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+write	A0_Hackathon/Multiplex/global.h	/^mode write = "w";$/;"	v	typeref:typename:mode
+write_file	Basics/p14_file.c	/^void write_file(){$/;"	f	typeref:typename:void
+x	A0_Hackathon/Movie2/declare.h	/^    int x;$/;"	m	struct:Info	typeref:typename:int
+x	A0_Hackathon/Movie3/declare.h	/^    int x;$/;"	m	struct:Info	typeref:typename:int
+x	A0_Hackathon/Multiplex/global.h	/^    int x;  \/\/  #oRows$/;"	m	struct:Screen	typeref:typename:int
+x	Training/p7.c	/^int i, x, y;$/;"	v	typeref:typename:int
+y	A0_Hackathon/Movie2/declare.h	/^    int y;$/;"	m	struct:Info	typeref:typename:int
+y	A0_Hackathon/Movie3/declare.h	/^    int y;$/;"	m	struct:Info	typeref:typename:int
+y	A0_Hackathon/Multiplex/global.h	/^    int y;  \/\/  #oCols$/;"	m	struct:Screen	typeref:typename:int
+y	Training/p7.c	/^int i, x, y;$/;"	v	typeref:typename:int
