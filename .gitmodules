@@ -1,3 +1,6 @@
 [submodule "run"]
 	path = run
 	url = https://github.com/syamilisn/run.git
+[submodule "A3_Kernels/B1_Modules/run"]
+	path = A3_Kernels/B1_Modules/run
+	url = https://github.com/syamilisn/run.git
