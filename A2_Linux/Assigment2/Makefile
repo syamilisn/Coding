@@ -19,6 +19,16 @@ p6:
 p7:
 	gcc p7_fcntl.c -o p7.o -Wall
 	./p7.o simple.txt
+p8:
+	gcc -g -pthread p8_simpthread.c -o p8.o
+	./p8.o
+p9:
+	gcc -g -pthread p9_thread.c -o p9.o
+	./p9.o
+p12:
+	gcc -g -pthread p12_mutex.c -o p12.o
+	./p12.o
+
 
 clean:
 	rm -rf *.o
