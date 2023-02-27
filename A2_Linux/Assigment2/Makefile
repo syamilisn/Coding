@@ -28,7 +28,21 @@ p9:
 p12:
 	gcc -g -pthread p12_mutex.c -o p12.o
 	./p12.o
-
+p13:
+	gcc execute.c -o execute.o -Wall
+	gcc p13_exec.c -o p13.o -Wall
+	./p13.o ./execute.o
+p14:
+	gcc execute.c -o execute.o -Wall
+	gcc p14_execv.c -o p14.o -Wall
+	./p14.o
+p15:
+	gcc execute.c -o execute.o -Wall
+	gcc p15_execve.c -o p15.o -Wall
+	./p15.o
+execute:
+	gcc execute.c -o execute.o -Wall
+	./execute.o
 
 clean:
 	rm -rf *.o
