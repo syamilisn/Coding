@@ -18,8 +18,8 @@ int main(int argc, char* argv[]){
                 printf("[parent~PID:%d] fork failed! child not created.\n", getpid());
         else if(pid == 0){
                 printf("[child~PID: %d] child running\n", getpid());
-		execl("./", argv[1], NULL);
-		//execv(argv[1], argv);---------works
+		//execl("execute.o", argv, NULL);
+		execl("execute.o", argv[0], NULL);
         }
         else{
                 wait();

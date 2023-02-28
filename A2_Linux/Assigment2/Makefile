@@ -35,11 +35,11 @@ p13:
 p14:
 	gcc execute.c -o execute.o -Wall
 	gcc p14_execv.c -o p14.o -Wall
-	./p14.o
+	./p14.o ./execute.o
 p15:
 	gcc execute.c -o execute.o -Wall
 	gcc p15_execve.c -o p15.o -Wall
-	./p15.o
+	./p15.o ./execute.o
 execute:
 	gcc execute.c -o execute.o -Wall
 	./execute.o

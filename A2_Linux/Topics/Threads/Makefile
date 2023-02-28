@@ -13,6 +13,9 @@ p4:
 p5:
 	gcc -g -pthread p5_mutex.c -o p5.o
 	./p5.o
+p6:
+	gcc -g -pthread p6_semaphore.c -o p6.o
+	./p6.o
 
 clean:
 	rm -rf *.o
