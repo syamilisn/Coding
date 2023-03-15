@@ -27,3 +27,11 @@
 #include <linux/cdev.h>
 #include <linux/device.h>
 #include <linux/err.h>
+
+#include <linux/mutex.h>
+#include <linux/proc_fs.h>
+#include <linux/seq_file.h>
+#define pr_fmt(fmt) "%s:%s(): " fmt, KBUILD_MODNAME, __func__
+#include <linux/ioctl.h>
+#include<linux/kobject.h> 
+

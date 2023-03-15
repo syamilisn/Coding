@@ -3,36 +3,40 @@
 * Version    : #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
 * Release    : 5.15.0-52-generic
 *
-* Modulename : 213031_Syamili_SN_Program_1
-* Description: char driver to access user space memory from linux kernel
+* Modulename : sysfs
+* Description: using sys file system
 */
 
 
 #include "run/headers.h"
 
 MODULE_AUTHOR("Syamili S N");
-MODULE_DESCRIPTION("char driver to access user space memory from linux kernel");
+MODULE_DESCRIPTION("using sys file system");
 MODULE_LICENSE("Dual MIT/GPL");
 MODULE_VERSION("0.1");
 
-#define mem_size        1024           //Memory Size
+volatile int etx_value = 0;
+
 
 dev_t dev = 0;
 static struct class *dev_class;
 static struct cdev etx_cdev;
-uint8_t *kernel_buffer;
-/*
-** Function Prototypes
-*/
+struct kobject *kobj_ref;
 static int      __init etx_driver_init(void);
 static void     __exit etx_driver_exit(void);
+
 static int      etx_open(struct inode *inode, struct file *file);
 static int      etx_release(struct inode *inode, struct file *file);
-static ssize_t  etx_read(struct file *filp, char __user *buf, size_t len,loff_t * off);
-static ssize_t  etx_write(struct file *filp, const char *buf, size_t len, loff_t * off);
-/*
-** File Operations structure
-*/
+static ssize_t  etx_read(struct file *filp,
+                        char __user *buf, size_t len,loff_t * off);
+static ssize_t  etx_write(struct file *filp,
+                        const char *buf, size_t len, loff_t * off);
+
+static ssize_t  sysfs_show(struct kobject *kobj,
+                        struct kobj_attribute *attr, char *buf);
+static ssize_t  sysfs_store(struct kobject *kobj,
+                        struct kobj_attribute *attr,const char *buf, size_t count);
+struct kobj_attribute etx_attr = __ATTR(etx_value, 0660, sysfs_show, sysfs_store);
 static struct file_operations fops =
 {
         .owner          = THIS_MODULE,
@@ -41,52 +45,43 @@ static struct file_operations fops =
         .open           = etx_open,
         .release        = etx_release,
 };
-
-/*
-** This function will be called when we open the Device file
-*/
+static ssize_t sysfs_show(struct kobject *kobj,
+                struct kobj_attribute *attr, char *buf)
+{
+        pr_info("Sysfs - Read!!!\n");
+        return sprintf(buf, "%d", etx_value);
+}
+static ssize_t sysfs_store(struct kobject *kobj,
+                struct kobj_attribute *attr,const char *buf, size_t count)
+{
+        pr_info("Sysfs - Write!!!\n");
+        sscanf(buf,"%d",&etx_value);
+        return count;
+}
 static int etx_open(struct inode *inode, struct file *file)
 {
         pr_info("Device File Opened...!!!\n");
         return 0;
 }
-/*
-** This function will be called when we close the Device file
-*/
 static int etx_release(struct inode *inode, struct file *file)
 {
         pr_info("Device File Closed...!!!\n");
         return 0;
 }
-/*
-** This function will be called when we read the Device file
-*/
-static ssize_t etx_read(struct file *filp, char __user *buf, size_t len, loff_t *off)
+
+static ssize_t etx_read(struct file *filp,
+                char __user *buf, size_t len, loff_t *off)
 {
-        //Copy the data from the kernel space to the user-space
-        if( copy_to_user(buf, kernel_buffer, mem_size) )
-        {
-                pr_err("Data Read : Err!\n");
-        }
-        pr_info("Data Read : Done!\n");
-        return mem_size;
+        pr_info("Read function\n");
+        return 0;
 }
-/*
-** This function will be called when we write the Device file
-*/
-static ssize_t etx_write(struct file *filp, const char __user *buf, size_t len, loff_t *off)
+static ssize_t etx_write(struct file *filp,
+                const char __user *buf, size_t len, loff_t *off)
 {
-        //Copy the data to kernel space from the user-space
-        if( copy_from_user(kernel_buffer, buf, len) )
-        {
-                pr_err("Data Write : Err!\n");
-        }
-        pr_info("Data Write : Done!\n");
+        pr_info("Write Function\n");
         return len;
 }
-/*
-** Module Init function
-*/
+
 static int __init etx_driver_init(void)
 {
         /*Allocating Major number*/
@@ -117,29 +112,32 @@ static int __init etx_driver_init(void)
             goto r_device;
         }
 
-        /*Creating Physical memory*/
-        if((kernel_buffer = kmalloc(mem_size , GFP_KERNEL)) == 0){
-            pr_info("Cannot allocate memory in kernel\n");
-            goto r_device;
-        }
+        /*Creating a directory in /sys/kernel/ */
+        kobj_ref = kobject_create_and_add("etx_sysfs",kernel_kobj);
 
-        strcpy(kernel_buffer, "Hello_World");
-
+        /*Creating sysfs file for etx_value*/
+        if(sysfs_create_file(kobj_ref,&etx_attr.attr)){
+                pr_err("Cannot create sysfs file......\n");
+                goto r_sysfs;
+    }
         pr_info("Device Driver Insert...Done!!!\n");
         return 0;
+
+r_sysfs:
+        kobject_put(kobj_ref);
+        sysfs_remove_file(kernel_kobj, &etx_attr.attr);
 
 r_device:
         class_destroy(dev_class);
 r_class:
         unregister_chrdev_region(dev,1);
+        cdev_del(&etx_cdev);
         return -1;
 }
-/*
-** Module exit function
-*/
 static void __exit etx_driver_exit(void)
 {
-  kfree(kernel_buffer);
+        kobject_put(kobj_ref);
+        sysfs_remove_file(kernel_kobj, &etx_attr.attr);
         device_destroy(dev_class,dev);
         class_destroy(dev_class);
         cdev_del(&etx_cdev);
