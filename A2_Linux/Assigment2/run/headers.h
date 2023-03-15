@@ -5,3 +5,4 @@
 #include <signal.h>
 #include <string.h>
 #include <pthread.h>
+#include <semaphore.h>

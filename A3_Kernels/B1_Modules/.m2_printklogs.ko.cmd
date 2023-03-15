@@ -1,1 +1,0 @@
-cmd_/home/ee213031/Coding/A3_Kernels/B1_Modules/m2_printklogs.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/ee213031/Coding/A3_Kernels/B1_Modules/m2_printklogs.ko /home/ee213031/Coding/A3_Kernels/B1_Modules/m2_printklogs.o /home/ee213031/Coding/A3_Kernels/B1_Modules/m2_printklogs.mod.o;  true

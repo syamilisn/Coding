@@ -1,3 +1,4 @@
+all:	p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15
 p1:
 	gcc p1_fork.c -o p1.o -Wall
 	./p1.o
@@ -25,6 +26,12 @@ p8:
 p9:
 	gcc -g -pthread p9_thread.c -o p9.o
 	./p9.o
+p10:
+	gcc -g -pthread p10_duplex.c -o p10.o
+	./p10.o
+p11:
+	gcc -g -pthread p11_procsync.c -o p11.o
+	./p11.o
 p12:
 	gcc -g -pthread p12_mutex.c -o p12.o
 	./p12.o

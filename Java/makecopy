@@ -1,0 +1,8 @@
+filename=${1}
+
+p1:
+	javac P1_hello.java
+	java P1_hello
+dum: 
+	javac ${1}.java
+	java ${1}
