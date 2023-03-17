@@ -8,7 +8,7 @@
 */
 
 
-#include "run/headers.h"
+#include "run/headersmini.h"
 
 MODULE_AUTHOR("Syamili S N");
 MODULE_DESCRIPTION("prints hello world in kernel buffer");
@@ -18,13 +18,15 @@ MODULE_VERSION("0.1");
 
 static int __init func_init(void)
 {
-	printk(KERN_INFO "Hello, world\n");
+	printk(KERN_INFO "[printk] Hello, world\n");
+	pr_info("[pr_info] Hello, world...!\n");
 	return 0;		/* success */
 }
 
 static void __exit func_exit(void)
 {
-	printk(KERN_INFO "Goodbye, world\n");
+	printk(KERN_INFO "[printk] Goodbye, world\n");
+	pr_info("[pr_info] Goodbye, world...!\n");
 }
 
 module_init(func_init);
