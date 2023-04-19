@@ -7,4 +7,5 @@ client:
 
 server:
 	gcc server.c -o server.o
-	./server.o
+	./server.o server.o 19 &
+
