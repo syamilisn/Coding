@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-#include<string.h>
+#include <string.h>
+#include <sqlite3.h>
 typedef char string[100];
 
 // structure for employee

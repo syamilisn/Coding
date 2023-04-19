@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-#define MAX 10
 typedef char string[100];
 
 // structure for employee
@@ -34,7 +33,7 @@ int main()
 	while(1)
 	{
 
-	message.mesg_type = 1;
+	    message.mesg_type = 1;
 		printf("Write Data : ");
 		printf("Write Data :\nID NAME DOMAIN LANG EXP\n");
 		scanf("%d %s %s %s %d", &message.emp.empid, message.emp.name, message.emp.domain, message.emp.lang, &message.emp.expc);
