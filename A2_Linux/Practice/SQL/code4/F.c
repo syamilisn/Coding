@@ -77,7 +77,7 @@ int emp_exists(int empid){      //  WORKING
 int main(){
     do{
         printf("**********************************************************\n");
-        printf("choice: 1. Insert records 2. View records 3. Send/Receive records\n\t> ");
+        printf("choice: 1. Insert records 2. View records 3. Receive records\n\t> ");
         scanf("%d", &choice);
         switch (choice)
         {
@@ -149,7 +149,7 @@ int main(){
                 sqlite3_close(db);
         }
             break;
-            case 3: //  send or receive
+            case 3: //  receive message
             {
                 key = ftok("progfile", 65);
         	    msgid = msgget(key, 0666 | IPC_CREAT);
