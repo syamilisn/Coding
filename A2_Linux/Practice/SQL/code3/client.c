@@ -6,7 +6,7 @@ int main(){
 	message msg;
 	static char m_key[10];
 	pid_t client_pid = getpid();
-	key_t key = ftok("progfile", 65);
+	key_t key;
 	if ((key = ftok(".", SEED)) == -1) { 	//	1. generate key
 		perror("1_Client: key generation");
 		return 1;
