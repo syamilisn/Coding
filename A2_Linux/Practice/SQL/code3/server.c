@@ -1,4 +1,5 @@
 //	server process
+// ./server 0 server
 #include "headers.h"
 
 void process_msg(char *b, int len){

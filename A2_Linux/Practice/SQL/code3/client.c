@@ -19,7 +19,7 @@ int main(){
 				return 2;
 			case 0:
 				sprintf(m_key, "%d", status);	//	3. string: pass message queue ID as string to server via command line
-				execlp("./server.o", "server.o", m_key, "&", 0);
+				execlp("./server.o", "server.o", m_key, "&",(char*)NULL);
 				perror("3_Client: exec");
 				return 3;
 		}

@@ -13,7 +13,7 @@ d:
 	gcc D.c -o clientD -lsqlite3
 	./clientD
 e:
-	gcc E.c -o clientE -lsqlite3 -Wall
+	gcc E.c -o clientE -lsqlite3 -Wno-coverage-mismatch
 	./clientE
 f:
 	gcc F.c -o clientF -lsqlite3
