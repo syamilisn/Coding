@@ -38,7 +38,7 @@ void emp_details(int id, char *name, char *domain, char *lang, int expc){
     message.emp.expc = expc;
 }
 int emp_exists(int empid){      //  WORKING
-    int rc = sqlite3_open("mydatabase2.db", &db);    //db connection
+    int rc = sqlite3_open("mydatabase.db", &db);    //db connection
     if (rc != SQLITE_OK){
         fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
         sqlite3_close(db);
@@ -60,29 +60,10 @@ int emp_exists(int empid){      //  WORKING
             int expc = sqlite3_column_int(select_stmt, 4);
             //printf("Emp_id: %d, Name: %s, Domain: %s, Lang: %s, Exp: %d\n", id, name, domain, lang, expc);
             if(empid == id){
-                if(message.emp.expc != expc){
-                    printf("Experience mismatch! \n");
-                    return 0;
-                }
-
-                if(strcmp(message.emp.name, name) != 0){
-                    printf("Name mismatch! \n");
-                    return 0;
-                }
-
-                if(strcmp(message.emp.domain, domain) != 0){
-                    printf("Domain mismatch! \n");
-                    return 0;
-                }
-
-                if(strcmp(message.emp.lang, lang) != 0){
-                    printf("Language mismatch! \n");
-                    return 0;
-                }
-                    emp_details(id, name, domain, lang, expc);
-                    sqlite3_finalize(select_stmt);
-                    sqlite3_close(db);
-                    return 1;
+                emp_details(id, name, domain, lang, expc);
+                sqlite3_finalize(select_stmt);
+                sqlite3_close(db);
+                return 1;
             }
     }
 
@@ -94,15 +75,16 @@ int emp_exists(int empid){      //  WORKING
 //*****************************************************
 
 int main(){
+    int flag=1;
     do{
         printf("**********************************************************\n");
-        printf("choice: 1. Insert records 2. View records 3. Receive records\n\t> ");
+        printf("choice: 1. Insert records 2. View records 3. Send records\n\t> ");
         scanf("%d", &choice);
         switch (choice)
         {
             case 1: //insert into database
             {
-                int rc = sqlite3_open("mydatabase2.db", &db);    //db connection
+                int rc = sqlite3_open("mydatabase.db", &db);    //db connection
                 if (rc != SQLITE_OK){
                     fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
                     sqlite3_close(db);
@@ -137,7 +119,7 @@ int main(){
             break;
         case 2: //view database
         {
-                int rc = sqlite3_open("mydatabase2.db", &db);    //db connection
+                int rc = sqlite3_open("mydatabase.db", &db);    //db connection
                 if (rc != SQLITE_OK){
                     fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
                     sqlite3_close(db);
@@ -168,27 +150,38 @@ int main(){
                 sqlite3_close(db);
         }
             break;
-            case 3: //  receive message
+            case 3: //  send message
             {
-                key = ftok("progfile", 65);
+
+                
+                do{
+                    key = ftok("progfile", 65);
         	    msgid = msgget(key, 0666 | IPC_CREAT);
-
-                msgrcv(msgid, &message, sizeof(message), 1, 0);
-                printf("Received: %d %s %s %s %d \n", message.emp.id, message.emp.name, message.emp.domain, message.emp.lang, message.emp.expc);
-                if(emp_exists(message.emp.id))
-                {
-                    printf("employee record exists in DB_F.\n");
-                    message.success = 1;
-                    message.mesg_type = 2;
+                    printf("Enter employee ID \n");
+                    scanf("%d", &empid);
+            
+                    if(emp_exists(empid))
                     {
-                        //type here the loop
+                        printf("employee record loaded to queue successfully\n"); 
+                        message.success = 0;
+                        message.mesg_type = 1;
+                        msgsnd(msgid,&message,sizeof(message),0);
+                        msgrcv(msgid,&message,sizeof(message),2,0);
+                        if(message.success == 1)
+                            printf("ACK...success \n");
+                        else{
+                            printf("NACK...failure \n");
+                            break;
+                        }
                     }
-                    msgsnd(msgid,&message,sizeof(message),0);
-
-                }
-                else
-                    printf("employee record unavailable in DB_F.\n");
-                msgctl(msgid, IPC_RMID, NULL); 
+                    else
+                        printf("employee record unavailable in DB_E.\n");
+                    
+                    printf("Continue? 1/0 \n");
+                    scanf("%d",&flag);
+                    
+            	    msgctl(msgid, IPC_RMID, NULL); 
+                }while(flag!=0);
                 break;
             }
             default:

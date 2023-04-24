@@ -75,6 +75,7 @@ int emp_exists(int empid){      //  WORKING
 //*****************************************************
 
 int main(){
+    int flag=1;
     do{
         printf("**********************************************************\n");
         printf("choice: 1. Insert records 2. View records 3. Send records\n\t> ");
@@ -154,25 +155,32 @@ int main(){
 
                 key = ftok("progfile", 65);
         	    msgid = msgget(key, 0666 | IPC_CREAT);
-
-                printf("Enter employee ID \n");
-                scanf("%d", &empid);
-                if(emp_exists(empid))
-                {
-                    printf("employee record loaded to queue successfully\n"); 
-		            message.success = 0;
-                    message.mesg_type = 1;
-                    msgsnd(msgid,&message,sizeof(message),0);
-                    msgrcv(msgid,&message,sizeof(message),2,0);
-                    if(message.success == 1)
-                        printf("ACK...success \n");
-                    else{
-                        printf("NACK...failure \n");
-                        break;
+                
+                do{
+                    printf("Enter employee ID \n");
+                    scanf("%d", &empid);
+            
+                    if(emp_exists(empid))
+                    {
+                        printf("employee record loaded to queue successfully\n"); 
+                        message.success = 0;
+                        message.mesg_type = 1;
+                        msgsnd(msgid,&message,sizeof(message),0);
+                        msgrcv(msgid,&message,sizeof(message),2,0);
+                        if(message.success == 1)
+                            printf("ACK...success \n");
+                        else{
+                            printf("NACK...failure \n");
+                            break;
+                        }
                     }
-                }
-                else
-                    printf("employee record unavailable in DB_E.\n");
+                    else
+                        printf("employee record unavailable in DB_E.\n");
+                    
+                    printf("Continue? 1/0 \n");
+                    scanf("%d",&flag);
+                    
+                }while(flag!=0);
             	msgctl(msgid, IPC_RMID, NULL); 
                 break;
             }
