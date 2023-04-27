@@ -10,3 +10,12 @@
 [submodule "Java/Practice/script"]
 	path = Java/Practice/script
 	url = https://github.com/syamilisn/script.git
+[submodule "Kaiwan/Linux-Kernel-Programming"]
+	path = Kaiwan/Linux-Kernel-Programming
+	url = https://github.com/PacktPublishing/Linux-Kernel-Programming.git
+[submodule "Kaiwan/Linux-Kernel-Programming-Part-2"]
+	path = Kaiwan/Linux-Kernel-Programming-Part-2
+	url = https://github.com/PacktPublishing/Linux-Kernel-Programming-Part-2.git
+[submodule "Kaiwan/Linux-Kernel-Debugging"]
+	path = Kaiwan/Linux-Kernel-Debugging
+	url = https://github.com/PacktPublishing/Linux-Kernel-Debugging.git
