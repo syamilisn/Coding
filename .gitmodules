@@ -4,3 +4,9 @@
 [submodule "A3_Kernels/B1_Modules/run"]
 	path = A3_Kernels/B1_Modules/run
 	url = https://github.com/syamilisn/run.git
+[submodule "script"]
+	path = script
+	url = https://github.com/syamilisn/script.git
+[submodule "Java/Practice/script"]
+	path = Java/Practice/script
+	url = https://github.com/syamilisn/script.git
