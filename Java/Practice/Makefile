@@ -62,3 +62,7 @@ P15_overloading:
 P16_recursion:
 	javac P16_recursion.java
 	java P16_recursion
+
+P17_object:
+	javac P17_object.java
+	java P17_object
