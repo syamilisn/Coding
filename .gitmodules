@@ -19,3 +19,6 @@
 [submodule "Kaiwan/Linux-Kernel-Debugging"]
 	path = Kaiwan/Linux-Kernel-Debugging
 	url = https://github.com/PacktPublishing/Linux-Kernel-Debugging.git
+[submodule "LDD_johnathan"]
+	path = LDD_johnathan
+	url = https://resources.oreilly.com/examples/9780596005900.git
