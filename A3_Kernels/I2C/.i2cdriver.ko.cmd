@@ -1,1 +1,0 @@
-cmd_/home/ee213031/Coding/A3_Kernels/I2C/i2cdriver.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/ee213031/Coding/A3_Kernels/I2C/i2cdriver.ko /home/ee213031/Coding/A3_Kernels/I2C/i2cdriver.o /home/ee213031/Coding/A3_Kernels/I2C/i2cdriver.mod.o;  true

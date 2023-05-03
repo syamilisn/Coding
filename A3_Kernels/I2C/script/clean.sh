@@ -1,1 +1,1 @@
-rm -rf *.out
+ make clean
