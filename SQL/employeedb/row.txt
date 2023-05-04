@@ -1,0 +1,16 @@
+insert into employee (name, domain, lang, expc) values('syamili', 'kdd', 'c', 1);
+insert into employee (name, domain, lang, expc) values('anish', 'kdd', 'c', 2);
+insert into employee (name, domain, lang, expc) values('manoj', 'kdd', 'c', 3);
+insert into employee (name, domain, lang, expc) values('roma', 'kdd', 'cpp', 2);
+insert into employee (name, domain, lang, expc) values('puneeth', 'kdd', 'c', 1);
+insert into employee (name, domain, lang, expc) values('shalini', 'kdd', 'c', 4);
+insert into employee (name, domain, lang, expc) values('raghav', 'kdd', 'c', 6);
+insert into employee (name, domain, lang, expc) values('ramya', 'kdd', 'c', 1);
+********************
+insert into employee2 (name, domain, lang, expc) values('syamili', 'kdd', 'c', 1);
+insert into employee2 (name, domain, lang, expc) values('anish', 'kdd', 'c', 2);
+insert into employee2 (name, domain, lang, expc) values('manoj', 'kdd', 'c', 3);
+insert into employee2 (name, domain, lang, expc) values('roma', 'kdd', 'cpp', 2);
+insert into employee2 (name, domain, lang, expc) values('puneeth', 'kdd', 'c', 1);
+insert into employee2 (name, domain, lang, expc) values('rani', 'kdd', 'c', 1);
+

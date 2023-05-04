@@ -13,7 +13,7 @@ int main() {
     MYSQL *conn;
     conn = mysql_init(NULL);
 
-    if (mysql_real_connect(conn, "localhost", "username", "password", "database_name", 0, NULL, 0) == NULL) {
+    if (mysql_real_connect(conn, "localhost", "root", "Cuppie@123", "employeedb", 0, NULL, 0) == NULL) {
         printf("Error connecting to database: %s\n", mysql_error(conn));
         exit(1);
     }

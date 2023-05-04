@@ -1,5 +1,5 @@
 clean:
-	rm -rd *.out
+	rm -rf *.out
 conn:
 	gcc connect.c -o conn.out  `mysql_config --cflags --libs`
 	./conn.out

@@ -1,0 +1,12 @@
+CREATE TABLE employee(  
+    id int NOT NULL AUTO_INCREMENT,  
+    name varchar(50) NOT NULL,  
+    domain varchar(50) NOT NULL,  
+    lang varchar(50) NOT NULL,  
+    expc int NOT NULL,  
+    PRIMARY KEY (id)  
+);  
+
+DESC employee_table;
+
+SHOW tables;
