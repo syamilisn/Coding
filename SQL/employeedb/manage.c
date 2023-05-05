@@ -1,3 +1,7 @@
+/*
+    For quick insert to table
+*/
+
 #include <mysql/mysql.h>
 // #include <mysql.h>
 #include <stdio.h>

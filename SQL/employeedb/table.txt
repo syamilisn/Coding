@@ -9,4 +9,4 @@ CREATE TABLE employee(
 
 DESC employee_table;
 
-SHOW tables;
+SHOW TABLES;
