@@ -8,5 +8,5 @@ a:
 	./clientA
 
 b:
-	gcc clientB.c -o clientB `mysql_config --cflags --libs` -w
+	gcc clientB.c -o clientB `mysql_config --cflags --libs` -w 
 	./clientB
