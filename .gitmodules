@@ -22,3 +22,6 @@
 [submodule "LDD_johnathan"]
 	path = LDD_johnathan
 	url = https://resources.oreilly.com/examples/9780596005900.git
+[submodule "GRE-Resources"]
+	path = GRE-Resources
+	url = https://github.com/hussainsail2002/GRE-Resources.git
