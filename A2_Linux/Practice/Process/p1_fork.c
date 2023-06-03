@@ -3,8 +3,13 @@
 #include <unistd.h>
 void main(){
 	pid_t process;
+	//process = fork();
+	//process = fork();
 	process = fork();
-	process = fork();
-	process = fork();
-	printf("[%d] Hello\n", getpid());
+	if(process == 0){
+		sleep(5);
+		printf("[child~%d] Hello\n", getpid());
+	}
+	else
+		printf("[parent~%d] Hello\n", getpid());
 }

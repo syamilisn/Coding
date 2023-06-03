@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+.c	run/.c	1;"	F
+Makefile	Makefile	1;"	F
+README.md	run/README.md	1;"	F
+THREAD_NUM	p11_procsync.c	/^#define THREAD_NUM /;"	d	file:
+all	Makefile	/^all:	p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15$/;"	t
+clean	Makefile	/^clean:$/;"	t
+display	p8_simpthread.c	/^void* display(){$/;"	f	typeref:typename:void *
+display	p9_thread.c	/^void* display(){$/;"	f	typeref:typename:void *
+execute	Makefile	/^execute:$/;"	t
+execute.c	execute.c	1;"	F
+git.sh	run/git.sh	1;"	F
+headers.h	run/headers.h	1;"	F
+jmpfunction	p6_setjmp.c	/^void jmpfunction(jmp_buf envbuf){$/;"	f	typeref:typename:void
+lock	p10_duplex.c	/^pthread_mutex_t lock;$/;"	v	typeref:typename:pthread_mutex_t
+mails	p12_mutex.c	/^int mails = 0;$/;"	v	typeref:typename:int
+main	execute.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	p10_duplex.c	/^int main(){$/;"	f	typeref:typename:int
+main	p11_procsync.c	/^int main(int argc, char *argv[]){$/;"	f	typeref:typename:int
+main	p12_mutex.c	/^int main(){$/;"	f	typeref:typename:int
+main	p13_exec.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	p14_execv.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	p15_execve.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	p1_fork.c	/^int main(){$/;"	f	typeref:typename:int
+main	p2_orphanproc.c	/^int main(){$/;"	f	typeref:typename:int
+main	p3_zombieproc.c	/^int main(){$/;"	f	typeref:typename:int
+main	p4_exit.c	/^int main(){$/;"	f	typeref:typename:int
+main	p5_wait.c	/^int main(){$/;"	f	typeref:typename:int
+main	p6_setjmp.c	/^int main(){$/;"	f	typeref:typename:int
+main	p7_fcntl.c	/^int main(int argc, char* argv[]){$/;"	f	typeref:typename:int
+main	p8_simpthread.c	/^int main(){$/;"	f	typeref:typename:int
+main	p9_thread.c	/^int main(){$/;"	f	typeref:typename:int
+mutex	p12_mutex.c	/^pthread_mutex_t mutex;$/;"	v	typeref:typename:pthread_mutex_t
+p1	Makefile	/^p1:$/;"	t
+p10	Makefile	/^p10:$/;"	t
+p10_duplex.c	p10_duplex.c	1;"	F
+p11	Makefile	/^p11:$/;"	t
+p11_procsync.c	p11_procsync.c	1;"	F
+p12	Makefile	/^p12:$/;"	t
+p12_mutex.c	p12_mutex.c	1;"	F
+p13	Makefile	/^p13:$/;"	t
+p13_exec.c	p13_exec.c	1;"	F
+p14	Makefile	/^p14:$/;"	t
+p14_execv.c	p14_execv.c	1;"	F
+p15	Makefile	/^p15:$/;"	t
+p15_execve.c	p15_execve.c	1;"	F
+p1_fork.c	p1_fork.c	1;"	F
+p2	Makefile	/^p2:$/;"	t
+p2_orphanproc.c	p2_orphanproc.c	1;"	F
+p3	Makefile	/^p3:$/;"	t
+p3_zombieproc.c	p3_zombieproc.c	1;"	F
+p4	Makefile	/^p4:$/;"	t
+p4_exit.c	p4_exit.c	1;"	F
+p5	Makefile	/^p5:$/;"	t
+p5_wait.c	p5_wait.c	1;"	F
+p6	Makefile	/^p6:$/;"	t
+p6_setjmp.c	p6_setjmp.c	1;"	F
+p7	Makefile	/^p7:$/;"	t
+p7_fcntl.c	p7_fcntl.c	1;"	F
+p8	Makefile	/^p8:$/;"	t
+p8_simpthread.c	p8_simpthread.c	1;"	F
+p9	Makefile	/^p9:$/;"	t
+p9_thread.c	p9_thread.c	1;"	F
+play	p10_duplex.c	/^int play = 1;$/;"	v	typeref:typename:int
+routine	p11_procsync.c	/^void *routine(void *args){$/;"	f	typeref:typename:void *
+routine	p12_mutex.c	/^void* routine(){$/;"	f	typeref:typename:void *
+routine_generate	p10_duplex.c	/^void *routine_generate(void *args){$/;"	f	typeref:typename:void *
+routine_write	p10_duplex.c	/^void *routine_write(void *args){$/;"	f	typeref:typename:void *
+run	run/README.md	/^# run$/;"	c
+script.sh	run/script.sh	1;"	F
+semaphore	p11_procsync.c	/^sem_t semaphore;$/;"	v	typeref:typename:sem_t
+template.c	run/template.c	1;"	F
+token	p10_duplex.c	/^int token = 1;$/;"	v	typeref:typename:int
