@@ -1,23 +1,13 @@
 #include "ssd1306.h"
-
 #include <linux/delay.h>
-
 #include <linux/kernel.h>
-
 #include <linux/gpio.h>
-
 #include <linux/interrupt.h>
-
 #include <linux/timer.h>
-
 #include <linux/module.h>
-
 #include <linux/init.h>
-
 #include <linux/slab.h>
-
 #include <linux/i2c.h>
-
 #include <linux/types.h>
 
 /*
@@ -28,6 +18,29 @@
  **      len  -> Length of the data
  **   
  */
+
+/*
+    Function prototypes
+*/
+
+static int i2c_write(unsigned char * buf, unsigned int len);
+static void ssd1306_write(bool is_cmd, unsigned char data);
+static void ssd1306_set_cursor(uint8_t lineNo, uint8_t cursorPos);
+static void ssd1306_goto_next_line(void);
+static void ssd1306_print_char(unsigned char c);
+static void ssd1306_string_display(unsigned char * str);
+static int ssd1306_init(void);
+static void ssd1306_fill(unsigned char data);
+static int oled_probe(struct i2c_client * client,const struct i2c_device_id * id);
+static void oled_remove(struct i2c_client * client);
+static irqreturn_t ldr_sensor_irq_handler(int irq, void * dev_id);
+static irqreturn_t interrupt_thread_fn(int irq, void * dev_id);
+static int __init etx_driver_init(void);
+static void __exit etx_driver_exit(void);
+static void SSD1306_SetBrightness(uint8_t brightnessValue);
+
+
+
 
 static struct i2c_adapter * etx_i2c_adapter = NULL; // I2C Adapter Structure
 static struct i2c_client * etx_i2c_client_oled = NULL; // I2C Cient Structure (In our case it is OLED)
@@ -194,6 +207,12 @@ static void ssd1306_string_display(unsigned char * str) {
     }
 }
 
+static void SSD1306_SetBrightness(uint8_t brightnessValue)
+{
+    SSD1306_Write(true, 0x81); // Contrast command
+    SSD1306_Write(true, brightnessValue); // Contrast value (default value = 0x7F)
+}
+
 static int ssd1306_init(void) {
     // delay
 
@@ -318,7 +337,7 @@ static struct i2c_board_info oled_i2c_board_info = {
 
 
 unsigned long old_jiffie = 0;
-static irqreturn_t ir_sensor_irq_handler(int irq, void * dev_id) {
+static irqreturn_t ldr_sensor_irq_handler(int irq, void * dev_id) {
 
      unsigned long diff = jiffies - old_jiffie;
      if (diff < 500) {
@@ -333,12 +352,12 @@ static irqreturn_t ir_sensor_irq_handler(int irq, void * dev_id) {
     if(curr_value1==1)
     {
         count=0;
-        pr_info("It's dark\n");
+        pr_info("It's dark, no intruders.\n");
     }
     else
     {
         count=1;
-        pr_info("It's Not dark\n");
+        pr_info("It's Not dark, there are intruders!\n");
     }
 
 
@@ -359,10 +378,33 @@ static irqreturn_t interrupt_thread_fn(int irq, void * dev_id) {
       //Write String to OLED
       
       {
+        //  fade out
+        for(int dim = 150; dim>=0; dim-=10){
+            SSD1306_SetBrightness(0x81);    //contrast setting
+            SSD1306_SetBrightness(dim);
+            delay(50);
+        }
+        for(int dim2 = 34; dim>=0; dim-=17){
+            SSD1306_SetBrightness(0xD9);
+            SSD1306_SetBrightness(dim);
+            delay(50);
+        }
         ssd1306_string_display("Howdy !!! It's Day outside \n");
       }
       else
       {
+        for (int dim=0; dim<=160; dim+=10) {
+            ssd1306_SetBrightness(0x81);
+            ssd1306_SetBrightness(dim); //max 160
+            delay(50);
+        }
+        
+        
+        for (int dim2=0; dim2<=34; dim2+=17) {
+        ssd1306_SetBrightness(0xD9);
+        ssd1306_SetBrightness(dim2);  //max 34
+        delay(100);
+        }
         ssd1306_string_display("Hola !!! Its Dark \n");
       }
     
@@ -385,7 +427,7 @@ static int __init etx_driver_init(void) {
     }
 
     // Request GPIO pin for IR sensor
-    ret = gpio_request(SENSOR1_PIN, "ir_sensor1");
+    ret = gpio_request(SENSOR1_PIN, "ldr_sensor1");
     if (ret < 0) {
         printk(KERN_ERR "Failed to request GPIO %d for IR sensor\n", SENSOR1_PIN);
         return ret;
@@ -399,7 +441,7 @@ static int __init etx_driver_init(void) {
         gpio_free(SENSOR1_PIN);
         return ret;
     }
-    ret = request_threaded_irq(gpio_to_irq(SENSOR1_PIN), ir_sensor_irq_handler, interrupt_thread_fn, IRQF_TRIGGER_RISING, "ir_sensor1", NULL);
+    ret = request_threaded_irq(gpio_to_irq(SENSOR1_PIN), ldr_sensor_irq_handler, interrupt_thread_fn, IRQF_TRIGGER_RISING, "ldr_sensor1", NULL);
     if (ret < 0) {
         printk(KERN_ERR "Failed to request interrupt for IR sensor\n");
         gpio_free(SENSOR1_PIN);
@@ -431,6 +473,6 @@ module_init(etx_driver_init);
 module_exit(etx_driver_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Darshan S Bharadwaj");
-MODULE_DESCRIPTION("SSD1306 I2C Driver");
+MODULE_AUTHOR("Syamili Sake Nag");
+MODULE_DESCRIPTION("LDR Sensor Driver");
 MODULE_VERSION("1.0");
