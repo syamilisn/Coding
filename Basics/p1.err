@@ -1,0 +1,302 @@
+strace: ptrace_setoptions = 0x51
+strace: PTRACE_GET_SYSCALL_INFO works
+strace: new tcb for pid 11275, active tcbs:1
+strace: [wait(0x80137f) = 11275] WIFSTOPPED,sig=SIGSTOP,EVENT_STOP (128)
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: pid 11275 has TCB_STARTUP, initializing it
+strace: [wait(0x80057f) = 11275] WIFSTOPPED,sig=SIGTRAP,EVENT_STOP (128)
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00127f) = 11275] WIFSTOPPED,sig=SIGCONT
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+sstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+tracestrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+:strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+ strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+sstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+eccomp filter disabledstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+execve("./p18.o", ["./p18.o"], 0x7fff1f993d48 /* 50 vars */strace: [wait(0x04057f) = 11275] WIFSTOPPED,sig=SIGTRAP,EVENT_EXEC (4)
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+brk(NULLstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                               = 0x55d5a5c7a000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe4eefa200strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = -1 EINVAL (Invalid argument)
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+access("/etc/ld.so.preload", R_OKstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)      = -1 ENOENT (No such file or directory)
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXECstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 3
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+fstat(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+{st_mode=S_IFREG|0644, st_size=91526, ...}) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(NULL, 91526, PROT_READ, MAP_PRIVATE, 3, 0strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3f1bc000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+close(3strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                                = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXECstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 3
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+read(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+fstat(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+{st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3f1ba000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+pread64(3, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3efc8000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(0x7f2a3efea000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3efea000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(0x7f2a3f162000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3f162000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(0x7f2a3f1b0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3f1b0000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mmap(0x7f2a3f1b6000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0x7f2a3f1b6000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+close(3strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                                = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+arch_prctl(ARCH_SET_FS, 0x7f2a3f1bb540strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mprotect(0x7f2a3f1b0000, 16384, PROT_READstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mprotect(0x55d5a3de4000, 4096, PROT_READstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+mprotect(0x7f2a3f200000, 4096, PROT_READstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+munmap(0x7f2a3f1bc000, 91526strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)           = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+fstat(1, strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+{st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+brk(NULLstrace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                               = 0x55d5a5c7a000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+brk(0x55d5a5c9b000strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                     = 0x55d5a5c9b000
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+write(1, "The value of register variable a"..., 154strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+) = 154
+strace: [wait(0x00857f) = 11275] WIFSTOPPED,sig=133
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+exit_group(0strace: [wait(0x06057f) = 11275] WIFSTOPPED,sig=SIGTRAP,EVENT_EXIT (6)
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
+)                           = ?
+strace: [wait(0x000000) = 11275] WIFEXITED,exitcode=0
+strace: next_event: queued pid 11275
+strace: next_event: dequeued pid 11275
++++ exited with 0 +++
+strace: dropped tcb for pid 11275, 0 remain

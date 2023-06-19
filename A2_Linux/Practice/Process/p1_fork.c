@@ -3,11 +3,11 @@
 #include <unistd.h>
 void main(){
 	pid_t process;
-	//process = fork();
-	//process = fork();
 	process = fork();
+	//process = fork();
+	//process = fork();
 	if(process == 0){
-		sleep(5);
+		sleep(10);
 		printf("[child~%d] Hello\n", getpid());
 	}
 	else
