@@ -1,0 +1,289 @@
+Android 13
+
+==>Try su(root) if not working in normal user
+
+- Update your kernel to the latest possible
+- Reboot ur device after updating the kernel
+
+$ apt-get update
+$ apt-get upgrade
+
+$ apt install libncurses5
+https://stackoverflow.com/questions/3655306/ubuntu-usr-bin-env-python-no-such-file-or-directory
+- If Python 3 is not installed, install it: 
+- $ apt-get install python3
+
+- If Python 3 has been installed, run these commands:
+$ whereis python3
+- Then we create a symlink to it:
+$ sudo ln -s /usr/bin/python3 /usr/bin/python
+
+
+==>Steps for manually installing repo
+
+Method 1:
+https://askubuntu.com/questions/1247103/why-is-the-repo-package-unavailable-in-ubuntu-20-04-how-can-i-install-it
+
+$ mkdir -p ~/.bin
+$ PATH="${HOME}/.bin:${PATH}"
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+$ chmod a+rx ~/.bin/repo
+
+Method 2:
+- Go to the directory /u/
+// - Create a folder "aosp13"
+- Go to the folder aosp13
+
+- Create a folder "bin" in home
+- Open bin folder $ cd ~/bin/
+- $ mkdir repo
+- In bin
+- $ PATH=~/bin/:${PATH}
+
+Method 3:
+$ sudo apt-get install curl
+$ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+
+
+
+==>For getting aosp 13
+
+- In /u/aosp/
+$ PATH=/home/ee212498/bin/:${PATH}
+
+- In manifest section, we get both source tree and build tools
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/platform/manifest -b android-13.0.0_r24
+- Enter ur details if prompted
+$ repo sync
+- Then it will take time to repo sync
+
+
+
+==>Downloading sources and build tools
+
+- Use repo to download the sources, toolchain, and build scripts
+$ mkdir android-kernel
+$ cd android-kernel
+
+- Build tools are obtained from below
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/manifest -b common-android12-5.10
+$ repo sync
+	OR
+- To speed syncs, pass the -c(current branch) and -j<threadcount> flags
+$ repo sync -c -j8
+
+
+- In this android-kernel directory
+
+	FOR ANDROID 12
+- Rename the common folder as ur wish
+$ mv common/ common_bkp
+
+- Now copy the custom downloaded kernel(phone or car) in android-kernel folder and rename it as common
+$ mv kernel-5.10.66_r00 /common
+		OR
+$ mv kernel-5.10.43_r00 /common
+
+// $ mv </u/kernel-[5.10.66_r00 | kernel-5.10.43]> /common
+
+$ BUILD_CONFIG=common/build.config.gki.x86_64 build/build.sh
+$ cd <aosp directory>
+$ source build/envsetup.h
+$ lunch
+$ <select your device form lunch menu>
+$ emulator -kernel /u/android-kernel/out/android12-5.10/dist/bzImage
+
+	FOR ANDROID 13
+
+- Repo sync the android built tools with source tree(5.15.41)
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/manifest -b common-android13-5.15-2022-08
+$ repo sync
+
+- Get the source tree for (5.15.88)
+
+
+
+
+
+- Custom kernel 5.10.66 for sdk_phone android 12
+$ mkdir kernel-5.10.66_r00
+$ cd kernel-5.10.66_r00
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/common -b android12-5.10.66_r00
+$ repo sync
+
+
+
+- Custom kernel 5.10.43 for sdk_car android 12
+$ mkdir kernel-5.10.43
+$ cd kernel-5.10.43
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/common/ -b 5.10-android12-9
+$ repo sync
+
+
+- Custom kernel 5.15.41 with "built tools" for android 13
+$ repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/manifest -b common-android13-5.15-2022-08
+$ repo sync
+
+
+
+
+
+ 
+
+
+
+
+
+
+==>Adding targets (sdk_phone_x86_64) to lunch options
+
+- Keep a copy of AndroidProducts.mk, before editing it
+- $ cp /u/aosp13/build/target/product/AndroidProducts.mk /u/aosp13/build/target/product/AndroidProducts.mk.backup
+- $ vi /u/aosp13/build/target/product/AndroidProducts.mk
+
+- add $(LOCAL_DIR)/sdk_phone_x86_64.mk \ to PRODUCT_MAKEFILES
+- add sdk_phone_x86_64-eng \ to the COMMON_LUNCH_CHOICES
+
+$ source build/envsetup.sh
+$ lunch
+- choose the sdk_phone_x86_64 option
+$ make -j8 
+	OR
+$ make -j10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==>Insmoding modules to emulator
+
+- Install adb
+$ apt install adb
+
+- You cannot directly put files in emulator file system
+
+- Create a directory in your file system, create a sample kernel hello world and a makefile
+
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Vamshi P");
+MODULE_DESCRIPTION("HelloWorld Linux Kernel Module.");
+
+static int __init hello_init(void)
+{
+    printk(KERN_INFO "Hello world!\n");
+    return 0;
+}
+static void __exit hello_cleanup(void)
+{
+    printk(KERN_INFO "Cleaning up module.\n");
+}
+
+module_init(hello_init);
+module_exit(hello_cleanup);
+
+
+- Makefile is below
+
+obj-m		:= sample.o
+KERNEL_DIR	= /u/kernels/android12-5.10/android-kernel/out/android12-5.10/common/
+PWD			= $(shell pwd)
+modules:
+		make LD=ld.lld LLVM=1 CC=clang-12 -C $(KERNEL_DIR) M=$(PWD) modules
+clean:
+		make -C $(KERNEL_DIR) M=$(PWD) clean
+	
+		
+- While building the headers are stored in KERNEL_DIR
+- In terminal set the path
+- For android-12
+$ PATH=/u/kernels/android12-5.10/android-kernel/prebuilts-master/clang/host/linux-x86/clang-r416183b/bin/:${PATH}
+
+- For android-13
+
+$ sudo apt-get install dwarves
+$ PATH=/u/kernels/android13-5.15/prebuilts/clang/host/linux-x86/clang-r416183b/bin:${PATH}
+$ make
+
+- Push the files to emulator
+- adb push sample.ko to the desired file location
+$ adb push sample.ko /sdcard/modules/
+
+- Now in adb shell while running the phone emulator
+- $ adb shell
+- $ cd /sdcard/modules
+- $ insmod sample.ko
+- $ dmesg
+
+
+
+
+
+
+
+
+==>Find .ko modules in android source tree
+
+- .ko files in emulator
+/u/aosp13/out/target/product/emulator_x86_64/vendor_ramdisk/lib/modules/
+
+
+
+==>Pushing executable files from native c library to emulator(aosp)
+
+- Create a folder in /u/aosp13/external/
+- mkdir /u/aosp13/external/hello_world
+
+$ cd /u/aosp13/external/hello_world
+
+$ vi hello.c
+$ vi Android.mk
+
+    LOCAL_PATH := $(call my-dir)
+    include $(CLEAR_VARS)
+    # give module name
+    LOCAL_MODULE := hello_world
+    # list your C files to compile
+    LOCAL_SRC_FILES := hello.c
+    include $(BUILD_EXECUTABLE)
+
+
+$ cd /u/aosp13/
+$ source build/envsetup.sh
+$ lunch 72
+$ mmma external/hello_world
+
+- Takes some time to build targets
+
+$ emulator
+$ adb push /out/target/product/emulator_x86_64/system/bin/hello_world /data/local/.
+$ adb shell
+
+- In emulator shell
+
+$ cd /data/local/
+$ ./hello_world
+
+
+
+
+
+
+
+
+
+

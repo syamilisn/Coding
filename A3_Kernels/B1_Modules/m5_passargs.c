@@ -30,7 +30,7 @@ module_param(value, int, S_IRUSR| S_IWUSR);
 module_param(name, charp, S_IRUSR|S_IWUSR);
 module_param_array(arr_value, int, NULL, S_IRUSR|S_IWUSR);
 
-int notify_param(const char *val, const struct kernel_param *kp)
+int notify_param(const char *val, const struct kernel_param *kp)	//when cb_value is modified manually, message is displayed in dmesg
 {
 	int res = param_set_int(val, kp);
 	if(res == 0){
