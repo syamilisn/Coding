@@ -1,0 +1,39 @@
+
+
+Steps to build a custom kernel for your emulator device is :
+
+1) mkdir android-kernel
+2) cd android-kernel
+3) repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/manifest -b common-android13-5.10
+
+Choose the kernel version accordingly with the emulator device and its supported version.
+I have build andoid 13 which supports 5.10 kernel version so i choose this.Please choose different version for different android device.
+
+
+4) repo sync -c -j8
+
+5) find device -name sdk_car_x86_64.mk
+	
+   This command is used to find the manifest file emulator where we need to change the path of the kernel
+   Note this has to been done in aosp project folder
+
+6) For building the project the following commands are executed which will generate bzImage .The bzImage will be used for running the kernel.
+
+	1)BUILD_CONFIG=common/build.config.gki.x86_64 LTO=none build/build.sh
+ 	2)file out/android12-5.10/dist/bzImage 
+		to check the version of custom kernel you want to use
+	3)BUILD_CONFIG=common-modules/virtual-device/build.config.virtual_device.x86_64 LTO=none build/build.sh
+	4)BUILD_CONFIG=common-modules/virtual-device/build.config.virtual_device.x86_64 LTO=none FAST_BUILD=1 SKIP_MRPROPER=1 SKIP_DEFCONFIG=1 build/build.sh
+	5)Go to the aosp project directory and open the file
+
+		vi device/generic/goldfish/x86_64-kernel.mk
+
+	6)Change the lines 
+		
+		KERNEL_MODULES_PATH := /u/android-kernel/out/android13-5.10/dist
+
+		EMULATOR_KERNEL_FILE := $(KERNEL_MODULES_PATH)/bzImage
+	7) after changing go to the working directory and type make command once again
+
+		m all -j$(nproc)
+7) After all the building process your custom kernel is ready you can check that using the phone or adb shell

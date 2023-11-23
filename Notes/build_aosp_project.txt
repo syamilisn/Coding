@@ -1,0 +1,49 @@
+
+
+Installing repo :
+
+$ mkdir -p ~/.bin
+$ PATH="${HOME}/.bin:${PATH}"
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+$ chmod a+rx ~/.bin/repo
+
+
+Making custom project 
+
+1)Initialise the repo:
+	change the last name of the version of android u want to build 
+
+	repo init -u git://gitrepo.sasken.com/mirror/aosp/kernel/manifest -b common-android12-5.10
+2)Sync up the repo to download all the file 
+	repo sync -c -j8
+	
+	-j8 - makes the process faster and uses 4 core of your cpu
+
+Building up the aosp:
+	
+1)Choose the source to build 
+	The default source for the build is envsetup.h and command is below
+	source build/envsetup.h
+2)Lunch option to choose the emulator you want to build 
+	The command will show the list of devices and its architechure you want to build may be for phone or car accordingly whether to build it on x86_64 or arm-64 processer.
+	$>lunch 
+	
+	The above command will show the list of devices u can build for 
+
+	I have choose : sdk_car_x86_64-eng
+
+	The command will be :
+	
+	$>lunch sdk_car_x86_64-eng
+
+3) after choosing out path will be created within same folder and we need to build the system using make file:
+	
+	$>m -j16
+
+	-j16 is used to speed up the process while it uses all 16 cores of the system.
+
+That's it ,you will get a message saying build is successful after that you can run emulator
+
+	$>emulator 
+
+
